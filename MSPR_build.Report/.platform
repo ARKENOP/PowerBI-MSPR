@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "MSPR_build"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "c6818ca0-325d-4a72-89b4-16ffc22c9fea"
+  }
+}

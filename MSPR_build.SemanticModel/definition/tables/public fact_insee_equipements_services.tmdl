@@ -1,0 +1,278 @@
+table 'public fact_insee_equipements_services'
+	lineageTag: 09555362-3dfa-46c5-a2ac-5cf6ce2b92d7
+
+	column annee
+		dataType: int64
+		formatString: 0
+		lineageTag: c85c0adf-2aeb-4f76-b691-9f1257e263a1
+		summarizeBy: none
+		sourceColumn: annee
+
+		annotation SummarizationSetBy = User
+
+	column coiffure
+		dataType: double
+		lineageTag: e435f004-3c59-4f4c-95d1-666774bae1b8
+		summarizeBy: sum
+		sourceColumn: coiffure
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hypermarche_et_grand_magasin
+		dataType: double
+		lineageTag: 448f6015-7022-493e-8c27-a6fb0d870b13
+		summarizeBy: sum
+		sourceColumn: hypermarche_et_grand_magasin
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column supermarche_et_magasin_multi_commerce
+		dataType: double
+		lineageTag: 47b3e0fd-7fde-4373-8e7d-961f13f74f58
+		summarizeBy: sum
+		sourceColumn: supermarche_et_magasin_multi_commerce
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column superette
+		dataType: double
+		lineageTag: 4feadc5d-1026-40f5-91b5-b73dfc8bd073
+		summarizeBy: sum
+		sourceColumn: superette
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column epicerie
+		dataType: double
+		lineageTag: 48d6f660-daf9-4260-8eb4-2128066e35df
+		summarizeBy: sum
+		sourceColumn: epicerie
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column boulangerie_patisserie
+		dataType: double
+		lineageTag: 92c68f03-9e28-4f7f-afba-1440bad0608c
+		summarizeBy: sum
+		sourceColumn: boulangerie_patisserie
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column station_service
+		dataType: double
+		lineageTag: d18db81d-0835-4b4e-acd1-9dbd246b5630
+		summarizeBy: sum
+		sourceColumn: station_service
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column station_de_recharge_de_vehicules_electriques
+		dataType: double
+		lineageTag: 7d84cc93-5030-414d-9264-62a54148b1c3
+		summarizeBy: sum
+		sourceColumn: station_de_recharge_de_vehicules_electriques
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ecole_maternelle
+		dataType: double
+		lineageTag: 65b69cc8-8ea1-4256-b468-7f17c10b98f0
+		summarizeBy: sum
+		sourceColumn: ecole_maternelle
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ecole_primaire
+		dataType: double
+		lineageTag: 9d94178e-83c9-4864-b565-3422f7329c04
+		summarizeBy: sum
+		sourceColumn: ecole_primaire
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ecole_elementaire
+		dataType: double
+		lineageTag: 7fd14896-d02f-4e4e-a7e4-274bcf1a72aa
+		summarizeBy: sum
+		sourceColumn: ecole_elementaire
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column college
+		dataType: double
+		lineageTag: e225d9b0-2139-4e01-a6bd-9d8123551a64
+		summarizeBy: sum
+		sourceColumn: college
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column lycee_d_enseignement_general_et_ou_technologique
+		dataType: double
+		lineageTag: ca840a0a-6140-4200-ba3e-8c768192df68
+		summarizeBy: sum
+		sourceColumn: lycee_d_enseignement_general_et_ou_technologique
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column lycee_d_enseignement_professionnel
+		dataType: double
+		lineageTag: 4036f029-ee6e-4ded-8736-0756260d5684
+		summarizeBy: sum
+		sourceColumn: lycee_d_enseignement_professionnel
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column lycee_d_enseignement_agricole
+		dataType: double
+		lineageTag: 678c131a-3f0f-4b30-9a4b-cc473ecc353e
+		summarizeBy: sum
+		sourceColumn: lycee_d_enseignement_agricole
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column enseigneme_general_et_technologi_au_sein_d_un_lycee_professionn
+		dataType: double
+		lineageTag: eb2296b9-1467-4bf6-9761-529002da6633
+		summarizeBy: sum
+		sourceColumn: enseigneme_general_et_technologi_au_sein_d_un_lycee_professionn
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column enseig_profes_au_sein_d_un_lycee_d_enseig_general_et_ou_technol
+		dataType: double
+		lineageTag: 39f8cec6-903a-4f18-b7f7-c0c5b8de51e1
+		summarizeBy: sum
+		sourceColumn: enseig_profes_au_sein_d_un_lycee_d_enseig_general_et_ou_technol
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column psychologue
+		dataType: double
+		lineageTag: 93d65b7c-dc7b-47c9-8575-2157c12b6efc
+		summarizeBy: sum
+		sourceColumn: psychologue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column medecin_generaliste
+		dataType: double
+		lineageTag: 08a9ba16-2bb6-46b5-b562-e486460d7e87
+		summarizeBy: sum
+		sourceColumn: medecin_generaliste
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column chirurgien_dentiste
+		dataType: double
+		lineageTag: 9106eb9b-b744-4190-baf9-94c9a14ec95a
+		summarizeBy: sum
+		sourceColumn: chirurgien_dentiste
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column masseur_kinesitherapeute
+		dataType: double
+		lineageTag: 3ea79373-6acd-4873-bc17-8e5d18e911f7
+		summarizeBy: sum
+		sourceColumn: masseur_kinesitherapeute
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column infirmier
+		dataType: double
+		lineageTag: d6d016e7-04d6-4f5f-817b-bdeaff23dfbd
+		summarizeBy: sum
+		sourceColumn: infirmier
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pharmacie
+		dataType: double
+		lineageTag: 0e8a75d6-1328-4040-b791-e0b5473f8d9d
+		summarizeBy: sum
+		sourceColumn: pharmacie
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column bibliotheque
+		dataType: double
+		lineageTag: e278ab47-fff1-4f86-89ca-f62c561ad1c4
+		summarizeBy: sum
+		sourceColumn: bibliotheque
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column geo_sk
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 074a6c16-e799-4198-a3c7-99a2040ff0ef
+		summarizeBy: none
+		sourceColumn: geo_sk
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public fact_insee_equipements_services' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("aws-1-eu-west-3.pooler.supabase.com", "postgres"),
+				    public_fact_insee_equipements_services = Source{[Schema="public",Item="fact_insee_equipements_services"]}[Data],
+				    #"Colonnes supprimées" = Table.RemoveColumns(public_fact_insee_equipements_services,{"fact_equipements_services_id"})
+				in
+				    #"Colonnes supprimées"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

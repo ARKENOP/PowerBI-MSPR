@@ -1,0 +1,62 @@
+table 'public dim_candidat_liste'
+	lineageTag: 24485ee5-3c94-4b45-acfb-65d73fc48517
+
+	column candidat_sk
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 66decbe4-086b-4168-bb7d-410b1fb99f17
+		summarizeBy: none
+		sourceColumn: candidat_sk
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_nuance
+		dataType: string
+		lineageTag: 710a2d8c-f8d7-432e-b2fe-daa9adec52b1
+		summarizeBy: none
+		sourceColumn: code_nuance
+
+		annotation SummarizationSetBy = Automatic
+
+	column nom
+		dataType: string
+		lineageTag: fd7c072c-ebe2-49df-8c20-b810a66085cc
+		summarizeBy: none
+		sourceColumn: nom
+
+		annotation SummarizationSetBy = Automatic
+
+	column prenom
+		dataType: string
+		lineageTag: c120656f-29ef-4e99-920c-126029a26422
+		summarizeBy: none
+		sourceColumn: prenom
+
+		annotation SummarizationSetBy = Automatic
+
+	column liste
+		dataType: string
+		lineageTag: ec2e1007-4cb4-449e-9d32-2409593813f7
+		summarizeBy: none
+		sourceColumn: liste
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public dim_candidat_liste' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("aws-1-eu-west-3.pooler.supabase.com", "postgres"),
+				    public_dim_candidat_liste = Source{[Schema="public",Item="dim_candidat_liste"]}[Data],
+				    #"Colonnes supprimées" = Table.RemoveColumns(public_dim_candidat_liste,{"candidat_nk"}),
+				    #"Type modifié" = Table.TransformColumnTypes(#"Colonnes supprimées",{{"candidat_sk", Int64.Type}})
+				in
+				    #"Type modifié"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

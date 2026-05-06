@@ -1,0 +1,238 @@
+table 'public fact_insee_creation_entreprises'
+	lineageTag: a267ccfb-a5e1-442d-922d-beb501e485c2
+
+	column annee
+		dataType: int64
+		formatString: 0
+		lineageTag: c7e28ed1-d304-46f0-8f45-eaa081399ea3
+		summarizeBy: none
+		sourceColumn: annee
+
+		annotation SummarizationSetBy = User
+
+	column creations_d_entr_de_l_industrie
+		dataType: double
+		lineageTag: 189facb3-8647-41ac-8944-9f5d47e15255
+		summarizeBy: sum
+		sourceColumn: creations_d_entr_de_l_industrie
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creations_d_entr_de_la_construction
+		dataType: double
+		lineageTag: 06818093-d651-4e86-8870-e32fe02a4ac6
+		summarizeBy: sum
+		sourceColumn: creations_d_entr_de_la_construction
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creations_d_entr_de_comm_transp_restau_heberg
+		dataType: double
+		lineageTag: baaf7732-f552-423e-bcf1-6bdd64887983
+		summarizeBy: sum
+		sourceColumn: creations_d_entr_de_comm_transp_restau_heberg
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creat_d_entr_ind_de_l_industrie
+		dataType: double
+		lineageTag: 1d708866-e978-48b1-bf4d-eb56d1430162
+		summarizeBy: sum
+		sourceColumn: creat_d_entr_ind_de_l_industrie
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creat_d_entr_ind_de_la_construction
+		dataType: double
+		lineageTag: 558dfbdb-fa8d-44e6-933e-561179c1aa32
+		summarizeBy: sum
+		sourceColumn: creat_d_entr_ind_de_la_construction
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creat_d_entr_ind_de_comm_transp_restau_heberg
+		dataType: double
+		lineageTag: 4872d568-2bee-481c-81da-54f75e4103f8
+		summarizeBy: sum
+		sourceColumn: creat_d_entr_ind_de_comm_transp_restau_heberg
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creat_d_entr_ind_d_information_et_communication
+		dataType: double
+		lineageTag: 406d404c-c215-42cc-80aa-147147149dbe
+		summarizeBy: sum
+		sourceColumn: creat_d_entr_ind_d_information_et_communication
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creat_d_entr_ind_d_activites_financieres_et_d_assurance
+		dataType: double
+		lineageTag: b8e46a05-6c1f-44a5-b557-a2ebf270e7d1
+		summarizeBy: sum
+		sourceColumn: creat_d_entr_ind_d_activites_financieres_et_d_assurance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creat_d_entr_ind_d_activites_immobilieres
+		dataType: double
+		lineageTag: 3847e830-bc9a-487c-a765-db53e9ab60d8
+		summarizeBy: sum
+		sourceColumn: creat_d_entr_ind_d_activites_immobilieres
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column crea_d_entr_ind_d_acti_spec_scie_et_tech_et_serv_adm
+		dataType: double
+		lineageTag: 23e998d9-b3fb-4f3b-8529-be5a8bf94bab
+		summarizeBy: sum
+		sourceColumn: crea_d_entr_ind_d_acti_spec_scie_et_tech_et_serv_adm
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creat_d_entr_ind_du_secte_adm_publ_ensei_sante_et_action_social
+		dataType: double
+		lineageTag: cffece1b-591f-4c12-8416-317a2f0d47f6
+		summarizeBy: sum
+		sourceColumn: creat_d_entr_ind_du_secte_adm_publ_ensei_sante_et_action_social
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creat_d_entr_ind_des_autres_activites_de_services
+		dataType: double
+		lineageTag: 00365c19-87bc-4d8a-8d56-ead3ec35b4df
+		summarizeBy: sum
+		sourceColumn: creat_d_entr_ind_des_autres_activites_de_services
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creations_d_entr_d_information_et_communication
+		dataType: double
+		lineageTag: 042b2042-5a5d-406e-ba48-af0166574e4a
+		summarizeBy: sum
+		sourceColumn: creations_d_entr_d_information_et_communication
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creations_d_entr_d_activites_financieres_et_d_assurance
+		dataType: double
+		lineageTag: c24256ae-7e8e-48f9-a8e0-d5372dc3b8b0
+		summarizeBy: sum
+		sourceColumn: creations_d_entr_d_activites_financieres_et_d_assurance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creations_d_entr_d_activites_immobilieres
+		dataType: double
+		lineageTag: f4e3e91b-df46-4262-b997-1a29b945cb3d
+		summarizeBy: sum
+		sourceColumn: creations_d_entr_d_activites_immobilieres
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column crea_d_entr_d_acti_spec_scie_et_tech_et_serv_adm
+		dataType: double
+		lineageTag: 66bf9830-10f4-4869-80c4-91061ae090ce
+		summarizeBy: sum
+		sourceColumn: crea_d_entr_d_acti_spec_scie_et_tech_et_serv_adm
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creati_d_entr_du_secteu_adm_publ_enseig_sante_et_action_sociale
+		dataType: double
+		lineageTag: 02fbac67-f7bf-4475-97b8-02625ce29aa9
+		summarizeBy: sum
+		sourceColumn: creati_d_entr_du_secteu_adm_publ_enseig_sante_et_action_sociale
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creations_d_entr_des_autres_activites_de_services
+		dataType: double
+		lineageTag: 83ad05ad-2bc9-4a0d-93e7-ff1e5a24816c
+		summarizeBy: sum
+		sourceColumn: creations_d_entr_des_autres_activites_de_services
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creations_d_entr_ind
+		dataType: double
+		lineageTag: 0ff92716-a4be-4e48-8b0a-c7b22669cae1
+		summarizeBy: sum
+		sourceColumn: creations_d_entr_ind
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creations_d_entr
+		dataType: double
+		lineageTag: 3de2c824-8c44-4962-8e3c-a6d43c626571
+		summarizeBy: sum
+		sourceColumn: creations_d_entr
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column geo_sk
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: c8344845-1c28-497c-a167-129fe3573784
+		summarizeBy: none
+		sourceColumn: geo_sk
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public fact_insee_creation_entreprises' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("aws-1-eu-west-3.pooler.supabase.com", "postgres"),
+				    public_fact_insee_creation_entreprises = Source{[Schema="public",Item="fact_insee_creation_entreprises"]}[Data],
+				    #"Colonnes supprimées" = Table.RemoveColumns(public_fact_insee_creation_entreprises,{"fact_creation_entreprises_id"})
+				in
+				    #"Colonnes supprimées"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

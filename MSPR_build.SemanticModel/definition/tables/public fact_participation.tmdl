@@ -1,0 +1,87 @@
+table 'public fact_participation'
+	lineageTag: f181d6b4-0d9f-4c71-a96d-65596ef3dee0
+
+	column election_sk
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 7c282426-79ab-4a10-9e94-d2ff488c7d4e
+		summarizeBy: none
+		sourceColumn: election_sk
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column geo_sk
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: f8fc35df-76e6-4503-93a8-a4d13034860f
+		summarizeBy: none
+		sourceColumn: geo_sk
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column inscrits
+		dataType: int64
+		formatString: 0
+		lineageTag: 6c43725e-8ec5-41cc-80f8-43719591b6cc
+		summarizeBy: sum
+		sourceColumn: inscrits
+
+		annotation SummarizationSetBy = Automatic
+
+	column abstentions
+		dataType: int64
+		formatString: 0
+		lineageTag: 7bf01f15-d54c-4a1c-9647-d09ace2e034c
+		summarizeBy: sum
+		sourceColumn: abstentions
+
+		annotation SummarizationSetBy = Automatic
+
+	column votants
+		dataType: int64
+		formatString: 0
+		lineageTag: ab751a9b-bc23-4bf1-b2ec-2018811de815
+		summarizeBy: sum
+		sourceColumn: votants
+
+		annotation SummarizationSetBy = Automatic
+
+	column blancs_nuls
+		dataType: int64
+		formatString: 0
+		lineageTag: 6f6a2c1c-d5c7-48f5-be41-999a42188a84
+		summarizeBy: sum
+		sourceColumn: blancs_nuls
+
+		annotation SummarizationSetBy = Automatic
+
+	column exprimes
+		dataType: int64
+		formatString: 0
+		lineageTag: 4dac0911-a783-4562-a656-4bdb1b05a622
+		summarizeBy: sum
+		sourceColumn: exprimes
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public fact_participation' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("aws-1-eu-west-3.pooler.supabase.com", "postgres"),
+				    public_fact_participation = Source{[Schema="public",Item="fact_participation"]}[Data],
+				    #"Colonnes supprimées" = Table.RemoveColumns(public_fact_participation,{"participation_id"}),
+				    #"Type modifié" = Table.TransformColumnTypes(#"Colonnes supprimées",{{"election_sk", Int64.Type}, {"geo_sk", Int64.Type}})
+				in
+				    #"Type modifié"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

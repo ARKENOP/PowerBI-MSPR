@@ -1,0 +1,4388 @@
+table 'public fact_insee_population'
+	lineageTag: 878df5f9-a209-408b-a6df-80b98cb5d0fc
+
+	column annee
+		dataType: int64
+		formatString: 0
+		lineageTag: 191897ac-7a30-4ad9-971b-be708dfd55ec
+		summarizeBy: none
+		sourceColumn: annee
+
+		annotation SummarizationSetBy = User
+
+	column logements_princ
+		dataType: double
+		lineageTag: d4639630-d177-4fca-ab25-5ee81c632bfa
+		summarizeBy: sum
+		sourceColumn: logements_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column logements_vacants_princ
+		dataType: double
+		lineageTag: f92c9b4e-7a9e-41e2-8710-e1445e26dd06
+		summarizeBy: sum
+		sourceColumn: logements_vacants_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_menages_pop_res_princ_princ
+		dataType: double
+		lineageTag: b7f720e0-2fd3-4872-b1fe-be41ef653e13
+		summarizeBy: sum
+		sourceColumn: pop_menages_pop_res_princ_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column population_princ
+		dataType: double
+		lineageTag: 98be7c0b-7a9c-4aec-b13d-2b9ce4a7fd87
+		summarizeBy: sum
+		sourceColumn: population_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column residences_principales_menages_princ
+		dataType: double
+		lineageTag: 58677e72-811d-437d-b940-ce42773404c8
+		summarizeBy: sum
+		sourceColumn: residences_principales_menages_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_secondaires_et_logts_occasionnels_princ
+		dataType: double
+		lineageTag: 7d7fdc23-d35c-46d8-95ea-b178d3fadff4
+		summarizeBy: sum
+		sourceColumn: res_secondaires_et_logts_occasionnels_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_15_24_ans_princ
+		dataType: double
+		lineageTag: b7085f0e-2672-4325-b4ff-1f5c299217fb
+		summarizeBy: sum
+		sourceColumn: actifs_15_24_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_15_64_ans_princ
+		dataType: double
+		lineageTag: 4e3aba8f-e715-4601-8bb6-9571129be6c8
+		summarizeBy: sum
+		sourceColumn: actifs_15_64_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_15_ans_ou_plus_princ
+		dataType: double
+		lineageTag: b4cf2236-b69a-464d-9ade-5a96a8062af5
+		summarizeBy: sum
+		sourceColumn: actifs_15_ans_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_25_54_ans_princ
+		dataType: double
+		lineageTag: f94acfe3-f5aa-4e35-95a5-519ce1b78cf6
+		summarizeBy: sum
+		sourceColumn: actifs_25_54_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_55_64_ans_princ
+		dataType: double
+		lineageTag: ff70b97d-9c78-48c3-81b6-0bec980fd9f9
+		summarizeBy: sum
+		sourceColumn: actifs_55_64_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occupes_princ
+		dataType: double
+		lineageTag: 7d8e82ac-c0d6-43fc-9e71-d8c86e94d22c
+		summarizeBy: sum
+		sourceColumn: actifs_occupes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occupes_15_24_ans_princ
+		dataType: double
+		lineageTag: 431b0e54-7b48-4110-9093-55a10ef4365f
+		summarizeBy: sum
+		sourceColumn: actifs_occupes_15_24_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occupes_15_64_ans_princ
+		dataType: double
+		lineageTag: fd63ff58-383b-465c-9cff-819fde52424b
+		summarizeBy: sum
+		sourceColumn: actifs_occupes_15_64_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occupes_15_ans_ou_plus_princ
+		dataType: double
+		lineageTag: 4c8d9444-4395-40c4-b7b4-924c89d7b6f9
+		summarizeBy: sum
+		sourceColumn: actifs_occupes_15_ans_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occ_15_ans_ou_plus_deux_roues_princ
+		dataType: double
+		lineageTag: de6825eb-ddcc-42f1-b316-e38196cc8e38
+		summarizeBy: sum
+		sourceColumn: actifs_occ_15_ans_ou_plus_deux_roues_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occ_15_ans_ou_plus_transport_en_commun_princ
+		dataType: double
+		lineageTag: 1fc513c9-45ac-406e-b0fa-c6c22693f3c7
+		summarizeBy: sum
+		sourceColumn: actifs_occ_15_ans_ou_plus_transport_en_commun_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actif_occ_15_ans_ou_plus_travaille_commune_residence_princ
+		dataType: double
+		lineageTag: b7e288ac-7af9-4baa-a2be-021fcc84f4b3
+		summarizeBy: sum
+		sourceColumn: actif_occ_15_ans_ou_plus_travaille_commune_residence_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column acti_occ_15_ans_ou_plus_trava_autre_commu_meme_dept_resid_princ
+		dataType: double
+		lineageTag: 34bfcfa7-9d15-470d-aed2-c45504421b39
+		summarizeBy: sum
+		sourceColumn: acti_occ_15_ans_ou_plus_trava_autre_commu_meme_dept_resid_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column acti_occ_15_ans_ou_plus_trava_autre_commu_que_commu_resid_princ
+		dataType: double
+		lineageTag: eadc93c9-8dc9-4484-aa2e-57f89522d0c4
+		summarizeBy: sum
+		sourceColumn: acti_occ_15_ans_ou_plus_trava_autre_commu_que_commu_resid_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column acti_occ_15_ans_ou_plus_trava_autre_dept_meme_regio_resid_princ
+		dataType: double
+		lineageTag: 1a94f816-16ea-41a2-aa1e-79ee99e0930a
+		summarizeBy: sum
+		sourceColumn: acti_occ_15_ans_ou_plus_trava_autre_dept_meme_regio_resid_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actif_occ_15_ans_ou_plus_travail_autre_region_en_metropol_princ
+		dataType: double
+		lineageTag: 3c5e67ae-2912-49e6-baf1-37f1273ade19
+		summarizeBy: sum
+		sourceColumn: actif_occ_15_ans_ou_plus_travail_autre_region_en_metropol_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actif_occ_15_ans_ou_plus_travai_autre_region_hors_metropo_princ
+		dataType: double
+		lineageTag: d4b55a30-375b-48d5-aaaa-3f77d8857c2d
+		summarizeBy: sum
+		sourceColumn: actif_occ_15_ans_ou_plus_travai_autre_region_hors_metropo_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occ_15_ans_ou_plus_marche_a_pied_pour_travail_princ
+		dataType: double
+		lineageTag: c3e7efcb-0ee9-42e3-ae08-6a52aef27573
+		summarizeBy: sum
+		sourceColumn: actifs_occ_15_ans_ou_plus_marche_a_pied_pour_travail_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occ_15_ans_ou_plus_pas_de_transport_pour_travail_princ
+		dataType: double
+		lineageTag: c3d2a87f-78d4-48cd-823a-761cf2e5343f
+		summarizeBy: sum
+		sourceColumn: actifs_occ_15_ans_ou_plus_pas_de_transport_pour_travail_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occ_15_ans_ou_plus_tp_princ
+		dataType: double
+		lineageTag: 975a6769-215d-46a8-b0ea-b0576742754a
+		summarizeBy: sum
+		sourceColumn: actifs_occ_15_ans_ou_plus_tp_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occ_15_ans_ou_plus_voiture_princ
+		dataType: double
+		lineageTag: cb84cd32-debc-4fe7-9c93-1393f4724dad
+		summarizeBy: sum
+		sourceColumn: actifs_occ_15_ans_ou_plus_voiture_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occupes_25_54_ans_princ
+		dataType: double
+		lineageTag: 830b3d56-c815-4106-bdc1-522b456b1457
+		summarizeBy: sum
+		sourceColumn: actifs_occupes_25_54_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occupes_55_64_ans_princ
+		dataType: double
+		lineageTag: 2e8e61d4-d321-4125-bd1f-2ff9182afd96
+		summarizeBy: sum
+		sourceColumn: actifs_occupes_55_64_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column autres_inactifs_15_64_ans_princ
+		dataType: double
+		lineageTag: a82c9b63-de04-4707-8582-c3d9d9115086
+		summarizeBy: sum
+		sourceColumn: autres_inactifs_15_64_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column anc_tot_emmengt_res_princ_annees_princ
+		dataType: double
+		lineageTag: 9a0e2d77-dd87-4fa5-ae99-fca585e215cd
+		summarizeBy: sum
+		sourceColumn: anc_tot_emmengt_res_princ_annees_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column anc_tot_emmengt_res_princ_occ_gratuit_annees_princ
+		dataType: double
+		lineageTag: f0213daf-7d40-4fbd-895b-8602a6327287
+		summarizeBy: sum
+		sourceColumn: anc_tot_emmengt_res_princ_occ_gratuit_annees_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column anc_tot_emmengt_res_princ_occ_par_locataires_annees_princ
+		dataType: double
+		lineageTag: 215b2bd9-d737-402e-b257-38663bde7bc4
+		summarizeBy: sum
+		sourceColumn: anc_tot_emmengt_res_princ_occ_par_locataires_annees_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column anc_tot_emmengt_res_princ_hlm_louees_vides_annees_princ
+		dataType: double
+		lineageTag: 33187d5d-9fb1-44a3-8d5e-cb6060e8d8b8
+		summarizeBy: sum
+		sourceColumn: anc_tot_emmengt_res_princ_hlm_louees_vides_annees_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column anc_tot_emmengt_res_princ_occ_par_proprietaires_annees_princ
+		dataType: double
+		lineageTag: 80c9e9da-6f38-458e-8a6c-50c6e256d8db
+		summarizeBy: sum
+		sourceColumn: anc_tot_emmengt_res_princ_occ_par_proprietaires_annees_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column appartements_princ
+		dataType: double
+		lineageTag: 2a50f43e-5918-4dc2-8343-10ffbe712bcd
+		summarizeBy: sum
+		sourceColumn: appartements_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column chomeurs_15_64_ans_princ
+		dataType: double
+		lineageTag: 066c6d9d-0cf9-4f0a-a673-8d109d41f541
+		summarizeBy: sum
+		sourceColumn: chomeurs_15_64_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column emplois_au_lt_princ
+		dataType: double
+		lineageTag: c918062a-da3f-4ab6-977d-ce4e82dc386c
+		summarizeBy: sum
+		sourceColumn: emplois_au_lt_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column emplois_non_salaries_femmes_au_lt_princ
+		dataType: double
+		lineageTag: 4bb774e4-d54d-427a-9ec9-8bc4a4075fc3
+		summarizeBy: sum
+		sourceColumn: emplois_non_salaries_femmes_au_lt_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column emplois_salaries_femmes_au_lt_princ
+		dataType: double
+		lineageTag: 2bc9befb-44ab-4f5e-afff-c71804a9af81
+		summarizeBy: sum
+		sourceColumn: emplois_salaries_femmes_au_lt_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column emplois_non_salaries_au_lt_princ
+		dataType: double
+		lineageTag: 29d9fe81-2559-4f8c-94c0-7aae9ef37385
+		summarizeBy: sum
+		sourceColumn: emplois_non_salaries_au_lt_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column emplois_non_salaries_tp_au_lt_princ
+		dataType: double
+		lineageTag: fbcfb3c7-07f0-48dd-b6d1-68852ec43286
+		summarizeBy: sum
+		sourceColumn: emplois_non_salaries_tp_au_lt_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column emplois_salaries_au_lt_princ
+		dataType: double
+		lineageTag: 252a37f9-ffcb-4f5d-83ef-31e6bb459a8a
+		summarizeBy: sum
+		sourceColumn: emplois_salaries_au_lt_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column emplois_salaries_tp_au_lt_princ
+		dataType: double
+		lineageTag: 6ba4b067-9137-40f0-bbbe-44205fa39a22
+		summarizeBy: sum
+		sourceColumn: emplois_salaries_tp_au_lt_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column elev_etud_stag_non_remuneres_15_64_ans_princ
+		dataType: double
+		lineageTag: 01ea5e52-ddc4-47cd-9912-f8d90adc5ee7
+		summarizeBy: sum
+		sourceColumn: elev_etud_stag_non_remuneres_15_64_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_femmes_0_14_ans_princ
+		dataType: double
+		lineageTag: e217fe0f-dbed-4c61-bda1-495c7659161e
+		summarizeBy: sum
+		sourceColumn: pop_femmes_0_14_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_femmes_0_19_ans_princ
+		dataType: double
+		lineageTag: 112d1ba8-e7df-4536-8e4f-aae0076399ca
+		summarizeBy: sum
+		sourceColumn: pop_femmes_0_19_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_2_5_ans_princ
+		dataType: double
+		lineageTag: f48ee8b3-8c66-4c0c-a67f-91d9fcbb5e1a
+		summarizeBy: sum
+		sourceColumn: femmes_2_5_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_6_10_ans_princ
+		dataType: double
+		lineageTag: a8726dfa-7e45-4bed-9a16-bb0adb28003f
+		summarizeBy: sum
+		sourceColumn: femmes_6_10_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_11_14_ans_princ
+		dataType: double
+		lineageTag: b3151b49-e28c-4423-801b-658103812503
+		summarizeBy: sum
+		sourceColumn: femmes_11_14_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_15_17_ans_princ
+		dataType: double
+		lineageTag: 43a1dc5a-18d6-4a71-8af1-7dbda0ddfa61
+		summarizeBy: sum
+		sourceColumn: femmes_15_17_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_24_ans_femmes_princ
+		dataType: double
+		lineageTag: 91db5645-2378-4ed1-a5de-29e2accedb52
+		summarizeBy: sum
+		sourceColumn: pop_15_24_ans_femmes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_femmes_15_29_ans_princ
+		dataType: double
+		lineageTag: 5b201433-071a-4da5-99bb-d0d2b34a9b2a
+		summarizeBy: sum
+		sourceColumn: pop_femmes_15_29_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_64_ans_femmes_princ
+		dataType: double
+		lineageTag: d22f68ec-4b62-420b-a394-4574e0f14f6a
+		summarizeBy: sum
+		sourceColumn: pop_15_64_ans_femmes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_18_24_ans_princ
+		dataType: double
+		lineageTag: e730ecbe-c9cd-4e9c-9f9b-461eba513e23
+		summarizeBy: sum
+		sourceColumn: femmes_18_24_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_femmes_20_64_ans_princ
+		dataType: double
+		lineageTag: 355c158c-e101-43b8-8626-12a2d2267caa
+		summarizeBy: sum
+		sourceColumn: pop_femmes_20_64_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_25_29_ans_princ
+		dataType: double
+		lineageTag: 575c82d5-a3a3-46ed-84f3-1f99646b8b31
+		summarizeBy: sum
+		sourceColumn: femmes_25_29_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_25_54_ans_femmes_princ
+		dataType: double
+		lineageTag: 561cec88-7078-4659-a9bd-19159399db76
+		summarizeBy: sum
+		sourceColumn: pop_25_54_ans_femmes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_femmes_30_44_ans_princ
+		dataType: double
+		lineageTag: fb0f8c27-6b73-4f71-8449-997b3d7b9385
+		summarizeBy: sum
+		sourceColumn: pop_femmes_30_44_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_30_ans_ou_plus_princ
+		dataType: double
+		lineageTag: 8db167a9-c3f4-4656-be6d-6e7333a83426
+		summarizeBy: sum
+		sourceColumn: femmes_30_ans_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_femmes_45_59_ans_princ
+		dataType: double
+		lineageTag: d9ebb35f-7dd1-43e5-be80-ad075c6b4cdf
+		summarizeBy: sum
+		sourceColumn: pop_femmes_45_59_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_55_64_ans_femmes_princ
+		dataType: double
+		lineageTag: 8d8bc046-9ef9-40d3-a677-50403cabf7c3
+		summarizeBy: sum
+		sourceColumn: pop_55_64_ans_femmes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_femmes_60_74_ans_princ
+		dataType: double
+		lineageTag: 4a9243b2-465a-450d-a3de-90b0311bf44f
+		summarizeBy: sum
+		sourceColumn: pop_femmes_60_74_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_femmes_65_ans_ou_plus_princ
+		dataType: double
+		lineageTag: c985a723-4d96-448a-8d24-c77f75093a69
+		summarizeBy: sum
+		sourceColumn: pop_femmes_65_ans_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_femmes_75_89_ans_princ
+		dataType: double
+		lineageTag: 4a7bbde5-d6f0-4e47-9f53-c1d11d26ae38
+		summarizeBy: sum
+		sourceColumn: pop_femmes_75_89_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_femmes_90_ans_ou_plus_princ
+		dataType: double
+		lineageTag: cdd05fe0-6955-483b-85f6-a47091957385
+		summarizeBy: sum
+		sourceColumn: pop_femmes_90_ans_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_15_24_ans_femmes_princ
+		dataType: double
+		lineageTag: feda85a8-eb44-4383-9397-9bcbfb4f6dc5
+		summarizeBy: sum
+		sourceColumn: actifs_15_24_ans_femmes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_15_64_ans_femmes_princ
+		dataType: double
+		lineageTag: 4f405541-882a-4c0f-9d5d-52bbae8751ab
+		summarizeBy: sum
+		sourceColumn: actifs_15_64_ans_femmes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_25_54_ans_femmes_princ
+		dataType: double
+		lineageTag: 2b2ce964-f3bd-4f0c-b9ad-b980b88202f0
+		summarizeBy: sum
+		sourceColumn: actifs_25_54_ans_femmes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_55_64_ans_femmes_princ
+		dataType: double
+		lineageTag: 1ad9bd2d-e775-48e9-8272-d2a7769c4587
+		summarizeBy: sum
+		sourceColumn: actifs_55_64_ans_femmes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occupes_15_24_ans_femmes_princ
+		dataType: double
+		lineageTag: f518a877-82df-4971-895b-3e3e5291061f
+		summarizeBy: sum
+		sourceColumn: actifs_occupes_15_24_ans_femmes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occupes_15_64_ans_femmes_princ
+		dataType: double
+		lineageTag: 4ece3ef8-21c0-49c1-a38f-679554122c75
+		summarizeBy: sum
+		sourceColumn: actifs_occupes_15_64_ans_femmes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occupes_15_ans_ou_plus_femmes_princ
+		dataType: double
+		lineageTag: 8aead449-046a-44d7-8eaf-b10bfa3dc4bc
+		summarizeBy: sum
+		sourceColumn: actifs_occupes_15_ans_ou_plus_femmes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occupes_25_54_ans_femmes_princ
+		dataType: double
+		lineageTag: f6b9c6b0-72bf-4f13-8a55-a325bc570a69
+		summarizeBy: sum
+		sourceColumn: actifs_occupes_25_54_ans_femmes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occupes_55_64_ans_femmes_princ
+		dataType: double
+		lineageTag: 1c2379ed-d0ca-4954-8019-e15388e4064f
+		summarizeBy: sum
+		sourceColumn: actifs_occupes_55_64_ans_femmes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column chomeurs_15_24_ans_femmes_princ
+		dataType: double
+		lineageTag: 52fb4cc1-d36c-4866-a505-3c92b6b44fce
+		summarizeBy: sum
+		sourceColumn: chomeurs_15_24_ans_femmes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column chomeurs_15_64_ans_femmes_princ
+		dataType: double
+		lineageTag: 4bc21e93-7bfa-49fd-a8d5-698ddb16b6eb
+		summarizeBy: sum
+		sourceColumn: chomeurs_15_64_ans_femmes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column chomeurs_25_54_ans_femmes_princ
+		dataType: double
+		lineageTag: 40cbe86b-2297-423c-a498-cd9bcf88ea9e
+		summarizeBy: sum
+		sourceColumn: chomeurs_25_54_ans_femmes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column chomeurs_55_64_ans_femmes_princ
+		dataType: double
+		lineageTag: 2ac2dd80-d700-4d60-bd2c-8c0dc06fefb5
+		summarizeBy: sum
+		sourceColumn: chomeurs_55_64_ans_femmes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column non_salaries_15_ans_ou_plus_femmes_princ
+		dataType: double
+		lineageTag: d500fe49-46a8-46e0-b151-434e9134eb67
+		summarizeBy: sum
+		sourceColumn: non_salaries_15_ans_ou_plus_femmes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column non_salaries_15_ans_ou_plus_femmes_aides_familiales_princ
+		dataType: double
+		lineageTag: 953e8ef9-28f9-459f-a7b2-4b914b80985b
+		summarizeBy: sum
+		sourceColumn: non_salaries_15_ans_ou_plus_femmes_aides_familiales_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column non_salaries_15_ans_ou_plus_femmes_employeurs_princ
+		dataType: double
+		lineageTag: 70ff4520-8fe0-4a52-b37d-154b1407a884
+		summarizeBy: sum
+		sourceColumn: non_salaries_15_ans_ou_plus_femmes_employeurs_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column non_salaries_15_ans_ou_plus_femmes_independantes_princ
+		dataType: double
+		lineageTag: 444e636f-95bb-4355-be4e-87a3a68512a1
+		summarizeBy: sum
+		sourceColumn: non_salaries_15_ans_ou_plus_femmes_independantes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_15_ans_ou_plus_non_scolarisees_princ
+		dataType: double
+		lineageTag: 0b718f22-50d8-4ceb-8ddd-9e8268591486
+		summarizeBy: sum
+		sourceColumn: femmes_15_ans_ou_plus_non_scolarisees_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_15_ans_ou_plus_non_scol_bac_bp_princ
+		dataType: double
+		lineageTag: fbbdc277-6b8d-4717-805b-e9126d360e63
+		summarizeBy: sum
+		sourceColumn: femmes_15_ans_ou_plus_non_scol_bac_bp_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_15_ans_ou_plus_non_scol_enseignement_sup_court_princ
+		dataType: double
+		lineageTag: 30527e46-c9ea-4c0a-b602-59900b40504f
+		summarizeBy: sum
+		sourceColumn: femmes_15_ans_ou_plus_non_scol_enseignement_sup_court_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_15_ans_ou_plus_non_scol_bepc_brevet_colleges_princ
+		dataType: double
+		lineageTag: 7a26366c-b41d-40ef-b972-a05a50164af9
+		summarizeBy: sum
+		sourceColumn: femmes_15_ans_ou_plus_non_scol_bepc_brevet_colleges_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_15_ans_ou_plus_non_scol_cap_bep_princ
+		dataType: double
+		lineageTag: ec4a5230-e506-4b59-952f-9397a64e44b1
+		summarizeBy: sum
+		sourceColumn: femmes_15_ans_ou_plus_non_scol_cap_bep_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_15_ans_ou_plus_non_scol_cep_princ
+		dataType: double
+		lineageTag: c759947a-c8d7-40ac-855d-a0459380ddd6
+		summarizeBy: sum
+		sourceColumn: femmes_15_ans_ou_plus_non_scol_cep_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_15_ans_ou_plus_non_scol_sans_diplome_princ
+		dataType: double
+		lineageTag: 194a7e2e-8e58-441d-901e-1f20bfc291ec
+		summarizeBy: sum
+		sourceColumn: femmes_15_ans_ou_plus_non_scol_sans_diplome_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_15_ans_ou_plus_non_scol_enseignement_sup_long_princ
+		dataType: double
+		lineageTag: b5545e25-be5c-4420-8bda-7b6e746200f1
+		summarizeBy: sum
+		sourceColumn: femmes_15_ans_ou_plus_non_scol_enseignement_sup_long_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_15_24_ans_femmes_princ
+		dataType: double
+		lineageTag: 24e3012a-d3f8-41a4-8536-2b69063d4deb
+		summarizeBy: sum
+		sourceColumn: salaries_15_24_ans_femmes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_15_24_ans_femmes_tp_princ
+		dataType: double
+		lineageTag: 6fd532fb-65cf-4aea-bf25-97c73b6a8cf4
+		summarizeBy: sum
+		sourceColumn: salaries_15_24_ans_femmes_tp_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_15_64_ans_femmes_princ
+		dataType: double
+		lineageTag: b413c96e-2198-497f-a91c-cf2d49162866
+		summarizeBy: sum
+		sourceColumn: salaries_15_64_ans_femmes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_15_64_ans_femmes_tp_princ
+		dataType: double
+		lineageTag: 52607021-d6b7-46f4-9cb8-2e8757e85ff0
+		summarizeBy: sum
+		sourceColumn: salaries_15_64_ans_femmes_tp_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_15_ans_ou_plus_femmes_princ
+		dataType: double
+		lineageTag: de4f193e-c7fa-4258-a75d-6aff20e751f2
+		summarizeBy: sum
+		sourceColumn: salaries_15_ans_ou_plus_femmes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_15_ans_ou_plus_femmes_apprentissage_stage_princ
+		dataType: double
+		lineageTag: ae1e190e-7ef9-46b1-8418-ec0e263a112a
+		summarizeBy: sum
+		sourceColumn: salaries_15_ans_ou_plus_femmes_apprentissage_stage_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_15_ans_ou_plus_femmes_cdd_princ
+		dataType: double
+		lineageTag: 40b4f6e3-226a-42d3-a3c1-df68f45dbdda
+		summarizeBy: sum
+		sourceColumn: salaries_15_ans_ou_plus_femmes_cdd_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_15_ans_ou_plus_femmes_fonct_publ_cdi_princ
+		dataType: double
+		lineageTag: c381ca33-5e1a-4f87-9a8a-15873bb3190f
+		summarizeBy: sum
+		sourceColumn: salaries_15_ans_ou_plus_femmes_fonct_publ_cdi_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_15_ans_ou_plus_femmes_emplois_aides_princ
+		dataType: double
+		lineageTag: d9d187be-8ebf-4167-ae04-87999b5670e2
+		summarizeBy: sum
+		sourceColumn: salaries_15_ans_ou_plus_femmes_emplois_aides_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_15_ans_ou_plus_femmes_interim_princ
+		dataType: double
+		lineageTag: 978f2af7-af72-4c6d-ac6a-73da6c420b9b
+		summarizeBy: sum
+		sourceColumn: salaries_15_ans_ou_plus_femmes_interim_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_15_ans_ou_plus_tp_femmes_princ
+		dataType: double
+		lineageTag: 4f19ad37-683a-4a9f-a0d8-f8c7ea0fd1d2
+		summarizeBy: sum
+		sourceColumn: salaries_15_ans_ou_plus_tp_femmes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_25_54_ans_femmes_princ
+		dataType: double
+		lineageTag: 90687c0b-95da-4279-957e-1ef03b6d5cdc
+		summarizeBy: sum
+		sourceColumn: salaries_25_54_ans_femmes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_25_54_ans_femmes_tp_princ
+		dataType: double
+		lineageTag: 0a7fd820-8d9c-40c2-a261-60f2090d5a36
+		summarizeBy: sum
+		sourceColumn: salaries_25_54_ans_femmes_tp_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_55_64_ans_femmes_princ
+		dataType: double
+		lineageTag: ae0d64b6-635e-4361-b414-ae512dd15b97
+		summarizeBy: sum
+		sourceColumn: salaries_55_64_ans_femmes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_55_64_ans_femmes_tp_princ
+		dataType: double
+		lineageTag: 626a4172-57f2-42f2-9b59-46923c06bd09
+		summarizeBy: sum
+		sourceColumn: salaries_55_64_ans_femmes_tp_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_scolarisees_2_5_ans_princ
+		dataType: double
+		lineageTag: 0b9be23e-c1f8-47ba-8f9a-f856413ca58b
+		summarizeBy: sum
+		sourceColumn: femmes_scolarisees_2_5_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_scolarisees_6_10_ans_princ
+		dataType: double
+		lineageTag: ddbbf5b2-a48a-4c66-a8d3-cb73162fabb6
+		summarizeBy: sum
+		sourceColumn: femmes_scolarisees_6_10_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_scolarisees_11_14_ans_princ
+		dataType: double
+		lineageTag: ba732ed9-333f-4aa1-b786-eaaf2a7ef791
+		summarizeBy: sum
+		sourceColumn: femmes_scolarisees_11_14_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_scolarisees_15_17_ans_princ
+		dataType: double
+		lineageTag: 862f5cbb-9117-48f3-ac5c-d5debc11bfca
+		summarizeBy: sum
+		sourceColumn: femmes_scolarisees_15_17_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_scolarisees_18_24_ans_princ
+		dataType: double
+		lineageTag: af253034-5ca9-48f6-b91e-21d2b591fc3b
+		summarizeBy: sum
+		sourceColumn: femmes_scolarisees_18_24_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_scolarisees_25_29_ans_princ
+		dataType: double
+		lineageTag: f3fa30ff-928e-4f37-88f4-5b03b98a91fa
+		summarizeBy: sum
+		sourceColumn: femmes_scolarisees_25_29_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_scolarisees_30_ans_ou_plus_princ
+		dataType: double
+		lineageTag: 2885b056-da00-4a20-bfbc-2b9d5f11d2b2
+		summarizeBy: sum
+		sourceColumn: femmes_scolarisees_30_ans_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_hommes_0_14_ans_princ
+		dataType: double
+		lineageTag: 7f1f9a88-d37e-48c5-ba88-d6e1370e8675
+		summarizeBy: sum
+		sourceColumn: pop_hommes_0_14_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_hommes_0_19_ans_princ
+		dataType: double
+		lineageTag: 2421e2de-a2ed-42db-9eb6-d5ca0da52b75
+		summarizeBy: sum
+		sourceColumn: pop_hommes_0_19_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_2_5_ans_princ
+		dataType: double
+		lineageTag: ad722831-d21d-440f-9249-93218b522da5
+		summarizeBy: sum
+		sourceColumn: hommes_2_5_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_6_10_ans_princ
+		dataType: double
+		lineageTag: e1299357-015c-404b-a87b-1b64e96323f5
+		summarizeBy: sum
+		sourceColumn: hommes_6_10_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_11_14_ans_princ
+		dataType: double
+		lineageTag: 6dda4cf8-28ba-46ba-a511-53a42c34e4d5
+		summarizeBy: sum
+		sourceColumn: hommes_11_14_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_15_17_ans_princ
+		dataType: double
+		lineageTag: 9693916f-61b8-4758-9a54-ea1c828c9660
+		summarizeBy: sum
+		sourceColumn: hommes_15_17_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_24_ans_hommes_princ
+		dataType: double
+		lineageTag: c6395490-12d8-4d15-ab64-23f5599e188a
+		summarizeBy: sum
+		sourceColumn: pop_15_24_ans_hommes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_hommes_15_29_ans_princ
+		dataType: double
+		lineageTag: d9a7822c-b2f8-4fd5-9582-45c6d53fd8a9
+		summarizeBy: sum
+		sourceColumn: pop_hommes_15_29_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_64_ans_hommes_princ
+		dataType: double
+		lineageTag: 4f2b58be-5ebd-4764-9dbc-19fe64a409dd
+		summarizeBy: sum
+		sourceColumn: pop_15_64_ans_hommes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_18_24_ans_princ
+		dataType: double
+		lineageTag: 357d186b-ca11-473e-be3c-be0c53b200fa
+		summarizeBy: sum
+		sourceColumn: hommes_18_24_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_hommes_20_64_ans_princ
+		dataType: double
+		lineageTag: 80ecb175-1927-4548-9bbb-918a0cc44872
+		summarizeBy: sum
+		sourceColumn: pop_hommes_20_64_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_25_29_ans_princ
+		dataType: double
+		lineageTag: e49c1ef0-b950-4787-abf5-48d145a03776
+		summarizeBy: sum
+		sourceColumn: hommes_25_29_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_25_54_ans_hommes_princ
+		dataType: double
+		lineageTag: d052b2b5-5b4c-43d7-a1e3-4bd070ee8db2
+		summarizeBy: sum
+		sourceColumn: pop_25_54_ans_hommes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_hommes_30_44_ans_princ
+		dataType: double
+		lineageTag: 50aefdb6-dc56-4b7f-809b-7b6c901a6faa
+		summarizeBy: sum
+		sourceColumn: pop_hommes_30_44_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_30_ans_ou_plus_princ
+		dataType: double
+		lineageTag: f08dac54-d7a3-4fb2-984a-5a4a48735699
+		summarizeBy: sum
+		sourceColumn: hommes_30_ans_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_hommes_45_59_ans_princ
+		dataType: double
+		lineageTag: ba0797e5-5071-46a9-9c1c-243f4407d2ab
+		summarizeBy: sum
+		sourceColumn: pop_hommes_45_59_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_55_64_ans_hommes_princ
+		dataType: double
+		lineageTag: e6a3b7c4-385f-458c-87b7-7469d2b445d1
+		summarizeBy: sum
+		sourceColumn: pop_55_64_ans_hommes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_hommes_60_74_ans_princ
+		dataType: double
+		lineageTag: 377bccbd-6a40-46bd-a244-73db137923c3
+		summarizeBy: sum
+		sourceColumn: pop_hommes_60_74_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_hommes_65_ans_ou_plus_princ
+		dataType: double
+		lineageTag: d05beff0-9770-40a5-ad16-7033da860689
+		summarizeBy: sum
+		sourceColumn: pop_hommes_65_ans_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_hommes_75_89_ans_princ
+		dataType: double
+		lineageTag: 98d17b37-b823-4b7f-88c2-38a521aa4252
+		summarizeBy: sum
+		sourceColumn: pop_hommes_75_89_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_hommes_90_ans_ou_plus_princ
+		dataType: double
+		lineageTag: 95ab44e4-6423-49b9-a503-dc3318c8acc4
+		summarizeBy: sum
+		sourceColumn: pop_hommes_90_ans_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_15_24_ans_hommes_princ
+		dataType: double
+		lineageTag: 59fcdbee-187f-4f77-8fc8-f14b27cfc2de
+		summarizeBy: sum
+		sourceColumn: actifs_15_24_ans_hommes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_15_64_ans_hommes_princ
+		dataType: double
+		lineageTag: edf0689d-7021-44fd-9314-20b9b5e3d8ef
+		summarizeBy: sum
+		sourceColumn: actifs_15_64_ans_hommes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_25_54_ans_hommes_princ
+		dataType: double
+		lineageTag: 589a9600-618e-4b5f-baa7-819506805732
+		summarizeBy: sum
+		sourceColumn: actifs_25_54_ans_hommes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_55_64_ans_hommes_princ
+		dataType: double
+		lineageTag: 7276869a-332e-4b72-951f-ca9efab4a4ba
+		summarizeBy: sum
+		sourceColumn: actifs_55_64_ans_hommes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occupes_15_24_ans_hommes_princ
+		dataType: double
+		lineageTag: f232b357-1bc4-4186-873b-88077efe2d74
+		summarizeBy: sum
+		sourceColumn: actifs_occupes_15_24_ans_hommes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occupes_15_64_ans_hommes_princ
+		dataType: double
+		lineageTag: 5ec03f99-c71a-47e1-8c6f-6a46b7394375
+		summarizeBy: sum
+		sourceColumn: actifs_occupes_15_64_ans_hommes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occupes_15_ans_ou_plus_hommes_princ
+		dataType: double
+		lineageTag: e2385334-8bd1-44cd-8f64-fe604d21c8ec
+		summarizeBy: sum
+		sourceColumn: actifs_occupes_15_ans_ou_plus_hommes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occupes_25_54_ans_hommes_princ
+		dataType: double
+		lineageTag: 506c0d70-3acc-4602-9361-88ce9b6ed15c
+		summarizeBy: sum
+		sourceColumn: actifs_occupes_25_54_ans_hommes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occupes_55_64_ans_hommes_princ
+		dataType: double
+		lineageTag: 4853f2e7-247b-46b0-a69a-7290324b974a
+		summarizeBy: sum
+		sourceColumn: actifs_occupes_55_64_ans_hommes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column chomeurs_15_24_ans_hommes_princ
+		dataType: double
+		lineageTag: f2c5b35f-67d0-45f2-b69d-fdf4ed530f56
+		summarizeBy: sum
+		sourceColumn: chomeurs_15_24_ans_hommes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column chomeurs_15_64_ans_hommes_princ
+		dataType: double
+		lineageTag: 36878ea7-5ab4-4cb7-add5-a88bf4a92c2b
+		summarizeBy: sum
+		sourceColumn: chomeurs_15_64_ans_hommes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column chomeurs_25_54_ans_hommes_princ
+		dataType: double
+		lineageTag: 638feb53-8356-4dd1-80f5-b36b0b5aca76
+		summarizeBy: sum
+		sourceColumn: chomeurs_25_54_ans_hommes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column chomeurs_55_64_ans_hommes_princ
+		dataType: double
+		lineageTag: c152f96a-1163-4b4b-ac88-0aaa2e34f29f
+		summarizeBy: sum
+		sourceColumn: chomeurs_55_64_ans_hommes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column non_salaries_15_ans_ou_plus_hommes_princ
+		dataType: double
+		lineageTag: 55d1e7a2-409c-4f1d-b94a-3d418794d823
+		summarizeBy: sum
+		sourceColumn: non_salaries_15_ans_ou_plus_hommes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column non_salaries_15_ans_ou_plus_hommes_aides_familiaux_princ
+		dataType: double
+		lineageTag: 14aef335-cb7a-4dc2-b7af-fb347b69e383
+		summarizeBy: sum
+		sourceColumn: non_salaries_15_ans_ou_plus_hommes_aides_familiaux_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column non_salaries_15_ans_ou_plus_hommes_employeurs_princ
+		dataType: double
+		lineageTag: 940ad087-e54d-48c7-ae47-805faa1fb081
+		summarizeBy: sum
+		sourceColumn: non_salaries_15_ans_ou_plus_hommes_employeurs_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column non_salaries_15_ans_ou_plus_hommes_independants_princ
+		dataType: double
+		lineageTag: c6625dfc-3862-4d08-aad4-9766ab606d79
+		summarizeBy: sum
+		sourceColumn: non_salaries_15_ans_ou_plus_hommes_independants_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_15_ans_ou_plus_non_scolarises_princ
+		dataType: double
+		lineageTag: 1d93a307-aea9-4145-a2c6-ed4ac969036c
+		summarizeBy: sum
+		sourceColumn: hommes_15_ans_ou_plus_non_scolarises_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_15_ans_ou_plus_non_scol_bac_bp_princ
+		dataType: double
+		lineageTag: 897b9fdd-4a30-4cb3-952f-d9913a1be79d
+		summarizeBy: sum
+		sourceColumn: hommes_15_ans_ou_plus_non_scol_bac_bp_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_15_ans_ou_plus_non_scol_enseignement_sup_court_princ
+		dataType: double
+		lineageTag: dfc3657b-b193-4b76-8b84-0d5a1abdb634
+		summarizeBy: sum
+		sourceColumn: hommes_15_ans_ou_plus_non_scol_enseignement_sup_court_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_15_ans_ou_plus_non_scol_bepc_brevet_colleges_princ
+		dataType: double
+		lineageTag: 87ab4bdd-bf5f-44ca-81ef-3845f9f4f5b2
+		summarizeBy: sum
+		sourceColumn: hommes_15_ans_ou_plus_non_scol_bepc_brevet_colleges_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_15_ans_ou_plus_non_scol_cap_bep_princ
+		dataType: double
+		lineageTag: 15c24472-5382-45f0-a3eb-c0cb3417dafe
+		summarizeBy: sum
+		sourceColumn: hommes_15_ans_ou_plus_non_scol_cap_bep_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_15_ans_ou_plus_non_scol_cep_princ
+		dataType: double
+		lineageTag: 6d845a6c-629f-4817-937c-eec2a7fa6ae1
+		summarizeBy: sum
+		sourceColumn: hommes_15_ans_ou_plus_non_scol_cep_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_15_ans_ou_plus_non_scol_sans_diplome_princ
+		dataType: double
+		lineageTag: c0950aab-14d8-4f08-a5f5-4c46698e2579
+		summarizeBy: sum
+		sourceColumn: hommes_15_ans_ou_plus_non_scol_sans_diplome_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_15_ans_ou_plus_non_scol_enseignement_sup_long_princ
+		dataType: double
+		lineageTag: 25767f9e-fffd-4729-9f90-d194843642d2
+		summarizeBy: sum
+		sourceColumn: hommes_15_ans_ou_plus_non_scol_enseignement_sup_long_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_15_24_ans_hommes_princ
+		dataType: double
+		lineageTag: f9b62f30-d5bb-4181-b770-89394debac7e
+		summarizeBy: sum
+		sourceColumn: salaries_15_24_ans_hommes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_15_24_ans_hommes_tp_princ
+		dataType: double
+		lineageTag: 8a862fe7-fb39-4265-9ff2-9de452981984
+		summarizeBy: sum
+		sourceColumn: salaries_15_24_ans_hommes_tp_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_15_64_ans_hommes_princ
+		dataType: double
+		lineageTag: 82c7a26d-0c6e-4315-952f-5c188d5fc7bc
+		summarizeBy: sum
+		sourceColumn: salaries_15_64_ans_hommes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_15_64_ans_hommes_tp_princ
+		dataType: double
+		lineageTag: c2d1073d-e722-442c-b7cb-8f015ef9e56c
+		summarizeBy: sum
+		sourceColumn: salaries_15_64_ans_hommes_tp_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_15_ans_ou_plus_hommes_princ
+		dataType: double
+		lineageTag: 814024c9-1b77-4bc0-8765-fd778f4d1323
+		summarizeBy: sum
+		sourceColumn: salaries_15_ans_ou_plus_hommes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_15_ans_ou_plus_hommes_apprentissage_stage_princ
+		dataType: double
+		lineageTag: 7fac5582-34ef-4cd5-8b61-f425589fa819
+		summarizeBy: sum
+		sourceColumn: salaries_15_ans_ou_plus_hommes_apprentissage_stage_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_15_ans_ou_plus_hommes_cdd_princ
+		dataType: double
+		lineageTag: 3c917b6e-b594-45d8-85a6-7872bece72dc
+		summarizeBy: sum
+		sourceColumn: salaries_15_ans_ou_plus_hommes_cdd_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_15_ans_ou_plus_hommes_fonct_publ_cdi_princ
+		dataType: double
+		lineageTag: a780cb2b-11a2-4328-82f4-d9f289b9c9ee
+		summarizeBy: sum
+		sourceColumn: salaries_15_ans_ou_plus_hommes_fonct_publ_cdi_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_15_ans_ou_plus_hommes_emplois_aides_princ
+		dataType: double
+		lineageTag: f7346d60-20da-412a-bda2-2c854308eea0
+		summarizeBy: sum
+		sourceColumn: salaries_15_ans_ou_plus_hommes_emplois_aides_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_15_ans_ou_plus_hommes_interim_princ
+		dataType: double
+		lineageTag: af748c95-817a-434d-9e11-5bf7c814533e
+		summarizeBy: sum
+		sourceColumn: salaries_15_ans_ou_plus_hommes_interim_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_15_ans_ou_plus_tp_hommes_princ
+		dataType: double
+		lineageTag: e18e3bca-9222-4eaf-8489-a57fe93d4f34
+		summarizeBy: sum
+		sourceColumn: salaries_15_ans_ou_plus_tp_hommes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_25_54_ans_hommes_princ
+		dataType: double
+		lineageTag: 4f7932bc-9ffe-48c9-885f-76fd6905573e
+		summarizeBy: sum
+		sourceColumn: salaries_25_54_ans_hommes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_25_54_ans_hommes_tp_princ
+		dataType: double
+		lineageTag: f61096e9-5df3-4421-8f6b-7659a99d51c2
+		summarizeBy: sum
+		sourceColumn: salaries_25_54_ans_hommes_tp_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_55_64_ans_hommes_princ
+		dataType: double
+		lineageTag: c7802b96-61f0-4b8f-865a-696035029e5b
+		summarizeBy: sum
+		sourceColumn: salaries_55_64_ans_hommes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_55_64_ans_hommes_tp_princ
+		dataType: double
+		lineageTag: d305aab2-4993-4d8e-867c-8fb614dc2a72
+		summarizeBy: sum
+		sourceColumn: salaries_55_64_ans_hommes_tp_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_scolarises_2_5_ans_princ
+		dataType: double
+		lineageTag: 4fd17a19-32b2-4347-82b2-64186943f4ce
+		summarizeBy: sum
+		sourceColumn: hommes_scolarises_2_5_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_scolarises_6_10_ans_princ
+		dataType: double
+		lineageTag: 3f461b4e-e1a2-428f-b4f2-d71213408d10
+		summarizeBy: sum
+		sourceColumn: hommes_scolarises_6_10_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_scolarises_11_14_ans_princ
+		dataType: double
+		lineageTag: e718a57e-acc1-4ef5-9126-1413d6c9f886
+		summarizeBy: sum
+		sourceColumn: hommes_scolarises_11_14_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_scolarises_15_17_ans_princ
+		dataType: double
+		lineageTag: 614795bf-d423-428e-be59-3af1d08ee384
+		summarizeBy: sum
+		sourceColumn: hommes_scolarises_15_17_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_scolarises_18_24_ans_princ
+		dataType: double
+		lineageTag: 7288fc93-ec68-4f15-8016-35ae3a15d9d5
+		summarizeBy: sum
+		sourceColumn: hommes_scolarises_18_24_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_scolarises_25_29_ans_princ
+		dataType: double
+		lineageTag: 1146e673-d954-4bd5-ab6d-dc4729775001
+		summarizeBy: sum
+		sourceColumn: hommes_scolarises_25_29_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_scolarises_30_ans_ou_plus_princ
+		dataType: double
+		lineageTag: cd11c094-e9f7-41a6-b164-67f9a391d49c
+		summarizeBy: sum
+		sourceColumn: hommes_scolarises_30_ans_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column inactifs_15_64_ans_princ
+		dataType: double
+		lineageTag: 61f19f00-aeb0-455b-b617-d2bb3baa2d71
+		summarizeBy: sum
+		sourceColumn: inactifs_15_64_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column maisons_princ
+		dataType: double
+		lineageTag: 84c6685a-0477-40c5-9cd2-0269dcbda8cb
+		summarizeBy: sum
+		sourceColumn: maisons_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column menages_princ
+		dataType: double
+		lineageTag: 5366f497-4950-4d19-9920-af7cadec1f3c
+		summarizeBy: sum
+		sourceColumn: menages_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column menages_emmenages_moins_2_ans_princ
+		dataType: double
+		lineageTag: fd660c8e-f3f5-4835-b6a1-85927c5a3730
+		summarizeBy: sum
+		sourceColumn: menages_emmenages_moins_2_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column menages_emmenages_entre_2_4_ans_princ
+		dataType: double
+		lineageTag: 6160693d-a83d-4047-afb2-afa1c73d9bb6
+		summarizeBy: sum
+		sourceColumn: menages_emmenages_entre_2_4_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column menages_emmenages_entre_5_9_ans_princ
+		dataType: double
+		lineageTag: da1efebe-b490-41c1-a209-1ee7ce3ca1c5
+		summarizeBy: sum
+		sourceColumn: menages_emmenages_entre_5_9_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column menages_emmenages_entre_10_19_ans_princ
+		dataType: double
+		lineageTag: 26fb5513-4bc1-41e9-93ed-5a2b1ff7be4d
+		summarizeBy: sum
+		sourceColumn: menages_emmenages_entre_10_19_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column menages_emmenages_depuis_10_ans_ou_plus_princ
+		dataType: double
+		lineageTag: 6d70e1f2-cbc4-4f59-92eb-b1c67a9aa521
+		summarizeBy: sum
+		sourceColumn: menages_emmenages_depuis_10_ans_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column menages_emmenages_entre_20_29_ans_princ
+		dataType: double
+		lineageTag: ade7e1b8-c2b3-4d67-87cf-301373f85d94
+		summarizeBy: sum
+		sourceColumn: menages_emmenages_entre_20_29_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column menages_emmenages_depuis_30_ans_ou_plus_princ
+		dataType: double
+		lineageTag: dc609d04-4449-4b06-9396-1e21ac2af2cf
+		summarizeBy: sum
+		sourceColumn: menages_emmenages_depuis_30_ans_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pieces_res_princ_princ
+		dataType: double
+		lineageTag: 2f3f7efe-0269-456e-ac23-01343eeb7cb4
+		summarizeBy: sum
+		sourceColumn: pieces_res_princ_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pieces_res_princ_type_appartement_princ
+		dataType: double
+		lineageTag: 71a9ca18-142d-48f0-a74e-7841895eff24
+		summarizeBy: sum
+		sourceColumn: pieces_res_princ_type_appartement_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pieces_res_princ_type_maison_princ
+		dataType: double
+		lineageTag: fc9db9b9-1778-4495-9133-2e807c5f1e22
+		summarizeBy: sum
+		sourceColumn: pieces_res_princ_type_maison_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pieces_res_princ_men_emmenages_moins_2_ans_princ
+		dataType: double
+		lineageTag: 815adb31-1000-4393-a93d-70f74a04b127
+		summarizeBy: sum
+		sourceColumn: pieces_res_princ_men_emmenages_moins_2_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pieces_res_princ_men_emmenages_entre_2_4_ans_princ
+		dataType: double
+		lineageTag: 9aabcffe-0ca0-4faa-8d01-9dd5a3b5d3dc
+		summarizeBy: sum
+		sourceColumn: pieces_res_princ_men_emmenages_entre_2_4_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pieces_res_princ_men_emmenages_entre_5_9_ans_princ
+		dataType: double
+		lineageTag: 7fbb6451-ae8e-47f2-8de2-6ef587b3e7b6
+		summarizeBy: sum
+		sourceColumn: pieces_res_princ_men_emmenages_entre_5_9_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pieces_res_princ_men_emmenages_depuis_10_ans_ou_plus_princ
+		dataType: double
+		lineageTag: 4a8806b1-8840-4482-816f-5ca3dde653cc
+		summarizeBy: sum
+		sourceColumn: pieces_res_princ_men_emmenages_depuis_10_ans_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column personnes_res_princ_princ
+		dataType: double
+		lineageTag: 991ce7d5-8905-4831-8ee0-a44bb65a9f14
+		summarizeBy: sum
+		sourceColumn: personnes_res_princ_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pers_res_princ_occupees_gratuit_princ
+		dataType: double
+		lineageTag: 538fcfa6-29fc-4d28-9295-2ecf5b92a38a
+		summarizeBy: sum
+		sourceColumn: pers_res_princ_occupees_gratuit_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pers_res_princ_occupees_locataires_princ
+		dataType: double
+		lineageTag: 94a6c3a3-7164-44fc-a6b8-35796887c35a
+		summarizeBy: sum
+		sourceColumn: pers_res_princ_occupees_locataires_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pers_res_princ_hlm_louees_vides_princ
+		dataType: double
+		lineageTag: eca8653d-657b-4d78-8226-5849d2a7c53a
+		summarizeBy: sum
+		sourceColumn: pers_res_princ_hlm_louees_vides_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pers_res_princ_occupees_proprietaires_princ
+		dataType: double
+		lineageTag: 45a94503-b55c-4c90-92ee-f2861082b7e8
+		summarizeBy: sum
+		sourceColumn: pers_res_princ_occupees_proprietaires_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column non_salaries_15_ans_ou_plus_princ
+		dataType: double
+		lineageTag: d6439d9f-cd24-42b8-848b-91d324f1b6cf
+		summarizeBy: sum
+		sourceColumn: non_salaries_15_ans_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column non_salaries_15_ans_ou_plus_tp_princ
+		dataType: double
+		lineageTag: 1efd3c5f-b97c-4244-9225-c6e020c2112c
+		summarizeBy: sum
+		sourceColumn: non_salaries_15_ans_ou_plus_tp_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_non_scolarisee_princ
+		dataType: double
+		lineageTag: 066dfb34-8a8b-45aa-a1ff-5b84c226f316
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_non_scolarisee_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_non_scol_bac_bp_princ
+		dataType: double
+		lineageTag: ac45fe9a-52f6-40b5-92e9-b6f36c155256
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_non_scol_bac_bp_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_non_scol_enseignement_sup_court_princ
+		dataType: double
+		lineageTag: baba13d8-e902-476f-8a4c-68c20bb5a257
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_non_scol_enseignement_sup_court_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_non_scol_bepc_brevet_colleges_princ
+		dataType: double
+		lineageTag: b36f5603-93f5-42e1-906f-73d6958f0fcc
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_non_scol_bepc_brevet_colleges_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_non_scol_cap_bep_princ
+		dataType: double
+		lineageTag: 1af6f263-201a-469b-a52d-9e44f473db50
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_non_scol_cap_bep_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_non_scol_cep_princ
+		dataType: double
+		lineageTag: c3e43297-d1e4-4ac2-9239-a048e5349b10
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_non_scol_cep_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_non_scol_sans_diplome_princ
+		dataType: double
+		lineageTag: fe99fff8-be03-4119-8200-d9155138103d
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_non_scol_sans_diplome_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_non_scol_enseignement_sup_long_princ
+		dataType: double
+		lineageTag: 4a15f926-502d-431f-b896-92e28b1a095f
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_non_scol_enseignement_sup_long_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_menages_princ
+		dataType: double
+		lineageTag: 596c499e-d52f-4736-ab96-a0a8d7182e33
+		summarizeBy: sum
+		sourceColumn: pop_menages_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_men_emmenages_moins_2_ans_princ
+		dataType: double
+		lineageTag: 8d243a76-4c67-4f66-bb76-25e362cde08e
+		summarizeBy: sum
+		sourceColumn: pop_men_emmenages_moins_2_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_men_emmenages_entre_2_4_ans_princ
+		dataType: double
+		lineageTag: df32c11c-3d61-467f-9bd8-dce5c020ce08
+		summarizeBy: sum
+		sourceColumn: pop_men_emmenages_entre_2_4_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_men_emmenages_entre_5_9_ans_princ
+		dataType: double
+		lineageTag: f34c9d58-b192-4a4d-afb8-3e4125707814
+		summarizeBy: sum
+		sourceColumn: pop_men_emmenages_entre_5_9_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_men_emmenages_depuis_10_ans_ou_plus_princ
+		dataType: double
+		lineageTag: c9caaf9e-6b75-45d1-9fea-6ab1a9068f1c
+		summarizeBy: sum
+		sourceColumn: pop_men_emmenages_depuis_10_ans_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_0_14_ans_princ
+		dataType: double
+		lineageTag: 236ae268-a136-4430-a9b3-d802a3338e2c
+		summarizeBy: sum
+		sourceColumn: pop_0_14_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_1_14_ans_habitant_1_an_avt_autre_logt_meme_commune_princ
+		dataType: double
+		lineageTag: 7ea5732d-f1cd-4f9a-a136-b52e826826d3
+		summarizeBy: sum
+		sourceColumn: pop_1_14_ans_habitant_1_an_avt_autre_logt_meme_commune_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_1_14_ans_habitant_1_an_avt_autre_logt_princ
+		dataType: double
+		lineageTag: fee4027d-3353-4481-a405-8d0322c55165
+		summarizeBy: sum
+		sourceColumn: pop_1_14_ans_habitant_1_an_avt_autre_logt_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_1_14_ans_habitant_1_an_avt_autre_commune_princ
+		dataType: double
+		lineageTag: afc4dc51-16cf-4acc-a055-97b5425bead7
+		summarizeBy: sum
+		sourceColumn: pop_1_14_ans_habitant_1_an_avt_autre_commune_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_1_an_ou_plus_princ
+		dataType: double
+		lineageTag: e287efff-1308-4bb6-87e1-7b8a937d5e04
+		summarizeBy: sum
+		sourceColumn: pop_1_an_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_1_an_ou_plus_habitant_1_an_avt_meme_logt_princ
+		dataType: double
+		lineageTag: c6649d75-7ee8-458b-b362-966f576cf583
+		summarizeBy: sum
+		sourceColumn: pop_1_an_ou_plus_habitant_1_an_avt_meme_logt_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_1_an_ou_plus_habitan_1_an_avt_autre_logt_meme_commune_princ
+		dataType: double
+		lineageTag: e2149144-dd7b-47a5-acb5-bf7f2bc16e39
+		summarizeBy: sum
+		sourceColumn: pop_1_an_ou_plus_habitan_1_an_avt_autre_logt_meme_commune_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_1_an_ou_plus_habitan_1_an_avt_autre_commune_meme_dept_princ
+		dataType: double
+		lineageTag: 04d1a3cf-cde1-4723-90b9-c7d201a14d91
+		summarizeBy: sum
+		sourceColumn: pop_1_an_ou_plus_habitan_1_an_avt_autre_commune_meme_dept_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_1_an_ou_plus_habitant_1_an_avt_autre_dept_meme_region_princ
+		dataType: double
+		lineageTag: 223b2586-3a85-478e-b4be-ab7045bb8fa0
+		summarizeBy: sum
+		sourceColumn: pop_1_an_ou_plus_habitant_1_an_avt_autre_dept_meme_region_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_1_an_ou_plus_habitant_1_an_avt_autre_region_metropole_princ
+		dataType: double
+		lineageTag: 2173ff4e-0907-4a4d-9f72-5fa31d9e1a74
+		summarizeBy: sum
+		sourceColumn: pop_1_an_ou_plus_habitant_1_an_avt_autre_region_metropole_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_1_an_ou_plus_habitant_1_an_avt_un_dom_princ
+		dataType: double
+		lineageTag: 0c911351-6736-410f-9b05-f56b200d144e
+		summarizeBy: sum
+		sourceColumn: pop_1_an_ou_plus_habitant_1_an_avt_un_dom_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_1_an_ou_plus_habitant_1_an_avt_hors_metro_ou_dom_princ
+		dataType: double
+		lineageTag: e5b939fb-7d14-42e5-b958-f9920022b52b
+		summarizeBy: sum
+		sourceColumn: pop_1_an_ou_plus_habitant_1_an_avt_hors_metro_ou_dom_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_2_5_ans_princ
+		dataType: double
+		lineageTag: f8e32986-b8a8-4fbd-b226-45e7acc21cd2
+		summarizeBy: sum
+		sourceColumn: pop_2_5_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_6_10_ans_princ
+		dataType: double
+		lineageTag: 7c2bf5f0-aef5-4c9d-b979-353706e64f0a
+		summarizeBy: sum
+		sourceColumn: pop_6_10_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_11_14_ans_princ
+		dataType: double
+		lineageTag: d9ae015d-746a-488e-bbc3-293d9123895b
+		summarizeBy: sum
+		sourceColumn: pop_11_14_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_17_ans_princ
+		dataType: double
+		lineageTag: 3b4a69aa-f664-4002-8cd6-842126251610
+		summarizeBy: sum
+		sourceColumn: pop_15_17_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_19_ans_princ
+		dataType: double
+		lineageTag: fc94824e-148d-424b-9aab-60343990cfca
+		summarizeBy: sum
+		sourceColumn: pop_15_19_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_19_ans_vivant_en_couple_princ
+		dataType: double
+		lineageTag: 5ca75972-aca0-407c-8215-5b116e9925ac
+		summarizeBy: sum
+		sourceColumn: pop_15_19_ans_vivant_en_couple_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_19_ans_vivant_seule_princ
+		dataType: double
+		lineageTag: afc2188f-1bef-4866-9e98-39c0b0b14ee8
+		summarizeBy: sum
+		sourceColumn: pop_15_19_ans_vivant_seule_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_24_ans_habitant_1_an_avt_autre_logt_meme_commune_princ
+		dataType: double
+		lineageTag: 1a73de0b-b039-45d2-8cde-1010805eb391
+		summarizeBy: sum
+		sourceColumn: pop_15_24_ans_habitant_1_an_avt_autre_logt_meme_commune_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_24_ans_habitant_1_an_avt_autre_logt_princ
+		dataType: double
+		lineageTag: 78a1eb0c-d630-408d-b828-9a0d49b10f68
+		summarizeBy: sum
+		sourceColumn: pop_15_24_ans_habitant_1_an_avt_autre_logt_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_24_ans_habitant_1_an_avt_autre_commune_princ
+		dataType: double
+		lineageTag: 08372381-591f-488d-b1a6-e3bb4386807a
+		summarizeBy: sum
+		sourceColumn: pop_15_24_ans_habitant_1_an_avt_autre_commune_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_29_ans_princ
+		dataType: double
+		lineageTag: 37389ca2-9896-41df-9b87-35255cade38e
+		summarizeBy: sum
+		sourceColumn: pop_15_29_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_64_ans_princ
+		dataType: double
+		lineageTag: a10da827-ffff-47ae-a9ed-b5f5347eaa71
+		summarizeBy: sum
+		sourceColumn: pop_15_64_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_princ
+		dataType: double
+		lineageTag: 5bdecb1e-acd2-487c-b7e6-c065edeb7c13
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_celibataire_princ
+		dataType: double
+		lineageTag: 913198a7-764a-4ac2-822f-e98c37d18dcc
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_celibataire_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_divorce_princ
+		dataType: double
+		lineageTag: 39372dc8-b349-4ce8-9e54-b03379bcd9ae
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_divorce_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_marie_princ
+		dataType: double
+		lineageTag: c5200372-3f37-42ae-b180-3b82a0dfa0c6
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_marie_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_veuf_princ
+		dataType: double
+		lineageTag: f2009151-1c35-448a-a270-fa9f7459fe94
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_veuf_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_18_24_ans_princ
+		dataType: double
+		lineageTag: 8faebe31-b371-4a08-966f-a56b357ba68d
+		summarizeBy: sum
+		sourceColumn: pop_18_24_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_20_24_ans_princ
+		dataType: double
+		lineageTag: 729bfb5a-0947-48a0-9b29-537660434b67
+		summarizeBy: sum
+		sourceColumn: pop_20_24_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_20_24_ans_vivant_en_couple_princ
+		dataType: double
+		lineageTag: 82d1f354-9eb2-40da-906c-d79e8e91f374
+		summarizeBy: sum
+		sourceColumn: pop_20_24_ans_vivant_en_couple_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_20_24_ans_vivant_seule_princ
+		dataType: double
+		lineageTag: fd64dfaf-0a3a-41cd-a9d2-f976b7e8a137
+		summarizeBy: sum
+		sourceColumn: pop_20_24_ans_vivant_seule_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_25_29_ans_princ
+		dataType: double
+		lineageTag: a6ae0ed0-a647-4c58-98c7-6a59e3e9435e
+		summarizeBy: sum
+		sourceColumn: pop_25_29_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_25_39_ans_princ
+		dataType: double
+		lineageTag: b3077213-37ed-4bb9-bab5-0a2b3b575feb
+		summarizeBy: sum
+		sourceColumn: pop_25_39_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_25_39_ans_vivant_en_couple_princ
+		dataType: double
+		lineageTag: fc8d44b0-99c0-4263-8fc9-6ff69ec0659a
+		summarizeBy: sum
+		sourceColumn: pop_25_39_ans_vivant_en_couple_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_25_39_ans_vivant_seule_princ
+		dataType: double
+		lineageTag: ba039b84-f7be-44f1-90cf-2a938ca8ed14
+		summarizeBy: sum
+		sourceColumn: pop_25_39_ans_vivant_seule_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_25_54_ans_habitant_1_an_avt_autre_logt_meme_commune_princ
+		dataType: double
+		lineageTag: 06ba9acc-afca-4524-a253-34a43c23d2e4
+		summarizeBy: sum
+		sourceColumn: pop_25_54_ans_habitant_1_an_avt_autre_logt_meme_commune_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_25_54_ans_habitant_1_an_avt_autre_logt_princ
+		dataType: double
+		lineageTag: c9e7fb6d-4d51-4d0c-bcbe-c0e12818fed9
+		summarizeBy: sum
+		sourceColumn: pop_25_54_ans_habitant_1_an_avt_autre_logt_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_25_54_ans_habitant_1_an_avt_autre_commune_princ
+		dataType: double
+		lineageTag: f5a3d667-7903-4205-b35d-4f317b283394
+		summarizeBy: sum
+		sourceColumn: pop_25_54_ans_habitant_1_an_avt_autre_commune_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_30_44_ans_princ
+		dataType: double
+		lineageTag: d951c9bd-af73-45bb-8a36-e203170bd925
+		summarizeBy: sum
+		sourceColumn: pop_30_44_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_30_ans_ou_plus_princ
+		dataType: double
+		lineageTag: 850c9489-445f-4d95-9f96-dff6887da9d6
+		summarizeBy: sum
+		sourceColumn: pop_30_ans_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_40_54_ans_princ
+		dataType: double
+		lineageTag: 10808293-fd02-40c7-8edb-14dc401c7bbb
+		summarizeBy: sum
+		sourceColumn: pop_40_54_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_40_54_ans_vivant_en_couple_princ
+		dataType: double
+		lineageTag: 711d638d-a6b7-4c4f-88dc-091f29f40c06
+		summarizeBy: sum
+		sourceColumn: pop_40_54_ans_vivant_en_couple_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_40_54_ans_vivant_seule_princ
+		dataType: double
+		lineageTag: 56079abd-777f-4fa8-8564-b4321f410a52
+		summarizeBy: sum
+		sourceColumn: pop_40_54_ans_vivant_seule_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_45_59_ans_princ
+		dataType: double
+		lineageTag: 38072d81-66ee-45aa-b3a6-6a0b14daf431
+		summarizeBy: sum
+		sourceColumn: pop_45_59_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_55_64_ans_princ
+		dataType: double
+		lineageTag: 4cd8053e-639c-486d-ac9b-37390aa379a8
+		summarizeBy: sum
+		sourceColumn: pop_55_64_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_55_64_ans_vivant_en_couple_princ
+		dataType: double
+		lineageTag: 9a6c86fb-2367-4a2c-a653-1279276f1051
+		summarizeBy: sum
+		sourceColumn: pop_55_64_ans_vivant_en_couple_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_55_64_ans_vivant_seule_princ
+		dataType: double
+		lineageTag: 8238dab7-78da-470d-83bc-1f57fb80f3c3
+		summarizeBy: sum
+		sourceColumn: pop_55_64_ans_vivant_seule_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_55_ans_ou_plus_habita_1_an_avt_autre_logt_meme_commun_princ
+		dataType: double
+		lineageTag: 0815db47-e402-44c1-8f27-9af217b01dcd
+		summarizeBy: sum
+		sourceColumn: pop_55_ans_ou_plus_habita_1_an_avt_autre_logt_meme_commun_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_55_ans_ou_plus_habitant_1_an_avt_autre_logt_princ
+		dataType: double
+		lineageTag: 4dd45ac1-5ab7-4f50-b974-5fcc76fa80fe
+		summarizeBy: sum
+		sourceColumn: pop_55_ans_ou_plus_habitant_1_an_avt_autre_logt_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_55_ans_ou_plus_habitant_1_an_avt_autre_commune_princ
+		dataType: double
+		lineageTag: dc3d8e0d-3a20-4132-b84a-5e5ed45c9c07
+		summarizeBy: sum
+		sourceColumn: pop_55_ans_ou_plus_habitant_1_an_avt_autre_commune_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_60_74_ans_princ
+		dataType: double
+		lineageTag: 7a181e0d-36e7-4f68-8fc5-3abc4f849bd5
+		summarizeBy: sum
+		sourceColumn: pop_60_74_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_65_79_ans_princ
+		dataType: double
+		lineageTag: 9f4d3e5c-c736-434c-bf31-8519d97c265f
+		summarizeBy: sum
+		sourceColumn: pop_65_79_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_65_79_ans_vivant_en_couple_princ
+		dataType: double
+		lineageTag: fd976970-632a-4e07-8e16-972f00571261
+		summarizeBy: sum
+		sourceColumn: pop_65_79_ans_vivant_en_couple_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_65_79_ans_vivant_seule_princ
+		dataType: double
+		lineageTag: f1b68abb-e1c2-487d-aeb8-03c3686eb7f1
+		summarizeBy: sum
+		sourceColumn: pop_65_79_ans_vivant_seule_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_75_89_ans_princ
+		dataType: double
+		lineageTag: 22095638-4379-4a95-ac5a-ad23e1601b85
+		summarizeBy: sum
+		sourceColumn: pop_75_89_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_80_ans_ou_plus_princ
+		dataType: double
+		lineageTag: f2a4a847-c115-449c-bbd3-42a610a9651f
+		summarizeBy: sum
+		sourceColumn: pop_80_ans_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_80_ans_ou_plus_vivant_en_couple_princ
+		dataType: double
+		lineageTag: 617f7895-8e2b-4b78-af31-c25468a02cb6
+		summarizeBy: sum
+		sourceColumn: pop_80_ans_ou_plus_vivant_en_couple_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_80_ans_ou_plus_vivant_seule_princ
+		dataType: double
+		lineageTag: c2c45e1f-da5e-4c5b-84eb-14f349a2baf4
+		summarizeBy: sum
+		sourceColumn: pop_80_ans_ou_plus_vivant_seule_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_90_ans_ou_plus_princ
+		dataType: double
+		lineageTag: 695c4910-9521-4002-a18a-f285c8351213
+		summarizeBy: sum
+		sourceColumn: pop_90_ans_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_femmes_princ
+		dataType: double
+		lineageTag: c6931776-c4f7-4a12-b5e1-a7921a859dd4
+		summarizeBy: sum
+		sourceColumn: pop_femmes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_hommes_princ
+		dataType: double
+		lineageTag: 7bf1157d-a34c-4817-9b9e-4a92c95f057e
+		summarizeBy: sum
+		sourceColumn: pop_hommes_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_men_15_19_ans_princ
+		dataType: double
+		lineageTag: 84e96750-ac08-4e22-a930-c0757ab220af
+		summarizeBy: sum
+		sourceColumn: pop_men_15_19_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_men_20_24_ans_princ
+		dataType: double
+		lineageTag: 395ba2b9-5977-48c6-8e84-4378d2df0447
+		summarizeBy: sum
+		sourceColumn: pop_men_20_24_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_men_25_39_ans_princ
+		dataType: double
+		lineageTag: 69f72701-a84c-46b4-879d-529f81c932bc
+		summarizeBy: sum
+		sourceColumn: pop_men_25_39_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_men_40_54_ans_princ
+		dataType: double
+		lineageTag: 41f2f7e3-9bd6-4881-b262-489bfd26a364
+		summarizeBy: sum
+		sourceColumn: pop_men_40_54_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_men_55_64_ans_princ
+		dataType: double
+		lineageTag: 7701b267-84f0-410f-a325-52437e87d06e
+		summarizeBy: sum
+		sourceColumn: pop_men_55_64_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_men_65_79_ans_princ
+		dataType: double
+		lineageTag: bf124ff7-bb10-4f6f-9ce4-c9e4a5430b17
+		summarizeBy: sum
+		sourceColumn: pop_men_65_79_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_men_80_ans_ou_plus_princ
+		dataType: double
+		lineageTag: fb305c21-4b38-462e-b702-4e68882a5814
+		summarizeBy: sum
+		sourceColumn: pop_men_80_ans_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column retraites_preretraites_15_64_ans_princ
+		dataType: double
+		lineageTag: 3663a23f-ff48-475f-8dfb-3fc3a2d5f196
+		summarizeBy: sum
+		sourceColumn: retraites_preretraites_15_64_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column residences_principales_princ
+		dataType: double
+		lineageTag: f6e26417-ceaf-4980-a1bf-91b93de439c6
+		summarizeBy: sum
+		sourceColumn: residences_principales_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_type_appartement_princ
+		dataType: double
+		lineageTag: 36957c0f-7ad4-48ad-a86d-a6ae51b9da63
+		summarizeBy: sum
+		sourceColumn: res_princ_type_appartement_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_type_appart_avt_1946_princ
+		dataType: double
+		lineageTag: c914e8dc-957a-4109-a881-52997a0e88d5
+		summarizeBy: sum
+		sourceColumn: res_princ_type_appart_avt_1946_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_type_appart_1946_a_1990_princ
+		dataType: double
+		lineageTag: d0f048c3-2a72-4c55-bead-aac980bc1e6a
+		summarizeBy: sum
+		sourceColumn: res_princ_type_appart_1946_a_1990_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_type_appart_1991_a_2008_princ
+		dataType: double
+		lineageTag: f865aca5-3e9e-4705-ba30-523b7db683c9
+		summarizeBy: sum
+		sourceColumn: res_princ_type_appart_1991_a_2008_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_type_maison_princ
+		dataType: double
+		lineageTag: 6dc13fd9-310f-43b7-875e-4cd7819594b4
+		summarizeBy: sum
+		sourceColumn: res_princ_type_maison_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_type_maison_avt_1946_princ
+		dataType: double
+		lineageTag: c272d92e-c596-4b66-b5a4-91160bc2abda
+		summarizeBy: sum
+		sourceColumn: res_princ_type_maison_avt_1946_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_type_maison_1946_a_1990_princ
+		dataType: double
+		lineageTag: ae826350-8c3b-4aa9-8001-6f41f62984e3
+		summarizeBy: sum
+		sourceColumn: res_princ_type_maison_1946_a_1990_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_type_maison_1991_a_2008_princ
+		dataType: double
+		lineageTag: 7e74a9f0-7db3-4299-b84f-de2680759491
+		summarizeBy: sum
+		sourceColumn: res_princ_type_maison_1991_a_2008_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_1_piece_princ
+		dataType: double
+		lineageTag: 95273039-db3c-4b97-8363-eecd86ad6e1d
+		summarizeBy: sum
+		sourceColumn: res_princ_1_piece_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_2_pieces_princ
+		dataType: double
+		lineageTag: 4005de5b-adb9-468a-8bab-a8917c5510d7
+		summarizeBy: sum
+		sourceColumn: res_princ_2_pieces_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_3_pieces_princ
+		dataType: double
+		lineageTag: 09bdfac3-35d2-48f8-9961-d6b47b7ecfb4
+		summarizeBy: sum
+		sourceColumn: res_princ_3_pieces_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_4_pieces_princ
+		dataType: double
+		lineageTag: 612610a3-c43b-4362-95ab-36a2ec08c796
+		summarizeBy: sum
+		sourceColumn: res_princ_4_pieces_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_5_pieces_ou_plus_princ
+		dataType: double
+		lineageTag: db12cd81-1d5b-4c34-ab2b-8b0ec823952b
+		summarizeBy: sum
+		sourceColumn: res_princ_5_pieces_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_avt_1946_princ
+		dataType: double
+		lineageTag: b2e7d503-a9a2-41a0-bfdb-bf8113d59ae1
+		summarizeBy: sum
+		sourceColumn: res_princ_avt_1946_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_1946_a_1990_princ
+		dataType: double
+		lineageTag: b3450c83-2885-4c2b-b06b-da2b752d53e5
+		summarizeBy: sum
+		sourceColumn: res_princ_1946_a_1990_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_1991_a_2008_princ
+		dataType: double
+		lineageTag: 91d2b231-8084-4a99-b2e2-2d65be8f460a
+		summarizeBy: sum
+		sourceColumn: res_princ_1991_a_2008_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_avt_2009_princ
+		dataType: double
+		lineageTag: 7c53bce2-932d-4b5b-a38b-95802ea29055
+		summarizeBy: sum
+		sourceColumn: res_princ_avt_2009_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_avec_bain_douche_wc_dom_princ
+		dataType: double
+		lineageTag: 64c15880-3811-4058-a968-1359739d8429
+		summarizeBy: sum
+		sourceColumn: res_princ_avec_bain_douche_wc_dom_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cases_traditionnelles_dom_princ
+		dataType: double
+		lineageTag: 1a9eafc1-2675-4723-8e1b-110d58b622e5
+		summarizeBy: sum
+		sourceColumn: cases_traditionnelles_dom_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_combustible_principal_chauffage_autres
+		dataType: double
+		lineageTag: 9e037ed0-b345-4ad1-980f-d411c47cb454
+		summarizeBy: sum
+		sourceColumn: res_princ_combustible_principal_chauffage_autres
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_combustible_principal_chauffage_electicite
+		dataType: double
+		lineageTag: e9094851-1403-4728-b344-00301b27dfde
+		summarizeBy: sum
+		sourceColumn: res_princ_combustible_principal_chauffage_electicite
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_combustible_principal_chauffage_fioul
+		dataType: double
+		lineageTag: 41fee889-dbe1-4ae6-a3a4-42fca1bc1392
+		summarizeBy: sum
+		sourceColumn: res_princ_combustible_principal_chauffage_fioul
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_combusti_principa_chauffag_gaz_en_bouteill_ou_citerne
+		dataType: double
+		lineageTag: 2c8235e4-d357-4260-9943-f44f3fb8cb78
+		summarizeBy: sum
+		sourceColumn: res_princ_combusti_principa_chauffag_gaz_en_bouteill_ou_citerne
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_combus_princip_chauffa_gaz_de_ville_reseau_de_chaleur
+		dataType: double
+		lineageTag: 7d1da147-8229-499d-91e2-48df9c809a5f
+		summarizeBy: sum
+		sourceColumn: res_princ_combus_princip_chauffa_gaz_de_ville_reseau_de_chaleur
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_avec_chauffe_eau_solaire_dom_princ
+		dataType: double
+		lineageTag: 377bed4c-af2f-4f4c-966a-67b5363c15ea
+		summarizeBy: sum
+		sourceColumn: res_princ_avec_chauffe_eau_solaire_dom_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_avec_piece_climatisee_dom_princ
+		dataType: double
+		lineageTag: 5fee7fbc-5003-4156-a35c-cb104909ec5b
+		summarizeBy: sum
+		sourceColumn: res_princ_avec_piece_climatisee_dom_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_avec_eau_chaude_dom_princ
+		dataType: double
+		lineageTag: 15ed6669-68d1-4c8d-89f1-61e1e444c2f8
+		summarizeBy: sum
+		sourceColumn: res_princ_avec_eau_chaude_dom_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_avec_electricite_dom_princ
+		dataType: double
+		lineageTag: 664f7b36-3c62-43f7-91c7-b04c1b8a51df
+		summarizeBy: sum
+		sourceColumn: res_princ_avec_electricite_dom_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column menages_au_moins_un_parking_princ
+		dataType: double
+		lineageTag: a0b16096-42ef-4c2f-82ac-35a712f09819
+		summarizeBy: sum
+		sourceColumn: menages_au_moins_un_parking_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_loge_gratuit_princ
+		dataType: double
+		lineageTag: 6eb9e643-7b7f-48ae-9892-63e2842c4d32
+		summarizeBy: sum
+		sourceColumn: res_princ_loge_gratuit_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column habitations_de_fortune_dom_princ
+		dataType: double
+		lineageTag: 78fdd1af-df43-4b41-b579-37f317fd6248
+		summarizeBy: sum
+		sourceColumn: habitations_de_fortune_dom_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_occupees_locataires_princ
+		dataType: double
+		lineageTag: 2e1c6dba-846f-461c-ae95-cb282da25201
+		summarizeBy: sum
+		sourceColumn: res_princ_occupees_locataires_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_hlm_louee_vide_princ
+		dataType: double
+		lineageTag: 9088aae4-7aa7-44e1-9154-0dd0aa7da327
+		summarizeBy: sum
+		sourceColumn: res_princ_hlm_louee_vide_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column maisons_ou_immeubles_en_bois_dom_princ
+		dataType: double
+		lineageTag: 42deba57-dfc2-49b6-82af-92dcd6858ab2
+		summarizeBy: sum
+		sourceColumn: maisons_ou_immeubles_en_bois_dom_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column maisons_ou_immeubles_en_dur_dom_princ
+		dataType: double
+		lineageTag: 7c936c64-82cb-4036-adb9-7e4d96c98425
+		summarizeBy: sum
+		sourceColumn: maisons_ou_immeubles_en_dur_dom_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_occupees_proprietaires_princ
+		dataType: double
+		lineageTag: c1bdc661-5a1b-4711-baab-a6434fef7df0
+		summarizeBy: sum
+		sourceColumn: res_princ_occupees_proprietaires_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_avec_tout_a_l_egout_dom_princ
+		dataType: double
+		lineageTag: 573a1edb-38af-4054-b663-f30c186508dc
+		summarizeBy: sum
+		sourceColumn: res_princ_avec_tout_a_l_egout_dom_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column menages_une_voiture_princ
+		dataType: double
+		lineageTag: 974cb08b-8925-4ce2-878c-66bdd728058f
+		summarizeBy: sum
+		sourceColumn: menages_une_voiture_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column menages_au_moins_une_voiture_princ
+		dataType: double
+		lineageTag: c8faee78-9dfc-47aa-86d3-a50792bab254
+		summarizeBy: sum
+		sourceColumn: menages_au_moins_une_voiture_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column menages_deux_voitures_ou_plus_princ
+		dataType: double
+		lineageTag: 4da01f03-d2d3-47e1-9b5d-c149691c2e5e
+		summarizeBy: sum
+		sourceColumn: menages_deux_voitures_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_15_ans_ou_plus_princ
+		dataType: double
+		lineageTag: f48b50db-16cb-47cf-95b6-c8595b58fd36
+		summarizeBy: sum
+		sourceColumn: salaries_15_ans_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaries_15_ans_ou_plus_tp_princ
+		dataType: double
+		lineageTag: d4e7be8d-8916-4605-9cb8-450ce04c0e1d
+		summarizeBy: sum
+		sourceColumn: salaries_15_ans_ou_plus_tp_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_scolarisee_2_5_ans_princ
+		dataType: double
+		lineageTag: 2983d0c4-8b6a-4b3f-9872-e887867bee37
+		summarizeBy: sum
+		sourceColumn: pop_scolarisee_2_5_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_scolarisee_6_10_ans_princ
+		dataType: double
+		lineageTag: 6205c147-40c4-402d-a6f7-fbc4bb458b0c
+		summarizeBy: sum
+		sourceColumn: pop_scolarisee_6_10_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_scolarisee_11_14_ans_princ
+		dataType: double
+		lineageTag: 84770d16-f81e-4003-8d65-3db0c5f74d13
+		summarizeBy: sum
+		sourceColumn: pop_scolarisee_11_14_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_scolarisee_15_17_ans_princ
+		dataType: double
+		lineageTag: 7ae51d76-d304-4345-8a2a-6faf23e08e0b
+		summarizeBy: sum
+		sourceColumn: pop_scolarisee_15_17_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_scolarisee_18_24_ans_princ
+		dataType: double
+		lineageTag: 006204dd-1747-41d6-86cc-b877ce437937
+		summarizeBy: sum
+		sourceColumn: pop_scolarisee_18_24_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_scolarisee_25_29_ans_princ
+		dataType: double
+		lineageTag: 74357137-8425-49a9-a368-726cf6613e01
+		summarizeBy: sum
+		sourceColumn: pop_scolarisee_25_29_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_scolarisee_30_ans_ou_plus_princ
+		dataType: double
+		lineageTag: ea5314c6-0f7c-48b2-8d02-0cb1fa44c676
+		summarizeBy: sum
+		sourceColumn: pop_scolarisee_30_ans_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occ_15_ans_ou_plus_travaillent_commune_residence_princ
+		dataType: double
+		lineageTag: 9105d734-cac9-4c51-8c68-a3bf5976ac57
+		summarizeBy: sum
+		sourceColumn: actifs_occ_15_ans_ou_plus_travaillent_commune_residence_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occ_15_ans_ou_plus_travail_autre_region_en_metropo_princ
+		dataType: double
+		lineageTag: 43202295-301e-4767-b3a5-5d3982343372
+		summarizeBy: sum
+		sourceColumn: actifs_occ_15_ans_ou_plus_travail_autre_region_en_metropo_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occ_15_ans_ou_plus_travai_autre_region_hors_metrop_princ
+		dataType: double
+		lineageTag: dc62f2f2-206b-426a-b647-54351e45dcaf
+		summarizeBy: sum
+		sourceColumn: actifs_occ_15_ans_ou_plus_travai_autre_region_hors_metrop_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_15_ans_ou_plus_non_scol_bac_princ
+		dataType: double
+		lineageTag: 630581ac-0b6d-4236-b19a-7640d7887a78
+		summarizeBy: sum
+		sourceColumn: femmes_15_ans_ou_plus_non_scol_bac_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femm_15_plus_non_scol_sans_dipl_ou_bepc_brev_des_coll_dnb_prin
+		dataType: double
+		lineageTag: e87b7f3a-2cb1-49ad-9a90-41c935cada25
+		summarizeBy: sum
+		sourceColumn: femm_15_plus_non_scol_sans_dipl_ou_bepc_brev_des_coll_dnb_prin
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_15_ans_ou_plus_non_scol_enseignement_sup_princ
+		dataType: double
+		lineageTag: 388a0f4b-a845-49dd-8a05-7a78e8e6bd3d
+		summarizeBy: sum
+		sourceColumn: femmes_15_ans_ou_plus_non_scol_enseignement_sup_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_15_ans_ou_plus_non_scol_bac_princ
+		dataType: double
+		lineageTag: 80a10f1f-1ac5-49a5-9c66-798ae26f3941
+		summarizeBy: sum
+		sourceColumn: hommes_15_ans_ou_plus_non_scol_bac_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column homm_15_plus_non_scol_sans_dipl_ou_bepc_brev_des_coll_dnb_prin
+		dataType: double
+		lineageTag: e19d1c55-8ea1-46fa-99f8-2a9ecb6cd7c9
+		summarizeBy: sum
+		sourceColumn: homm_15_plus_non_scol_sans_dipl_ou_bepc_brev_des_coll_dnb_prin
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_15_ans_ou_plus_non_scol_enseignement_sup_princ
+		dataType: double
+		lineageTag: 1d96b271-7287-48a0-bbbe-d37eff0ffb75
+		summarizeBy: sum
+		sourceColumn: hommes_15_ans_ou_plus_non_scol_enseignement_sup_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_non_scol_bac_princ
+		dataType: double
+		lineageTag: 29c63342-da48-46e3-8605-cf82cef0a3d3
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_non_scol_bac_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_plus_non_scol_sans_dipl_ou_bepc_brev_des_coll_dnb_prin
+		dataType: double
+		lineageTag: 86d51a82-aac0-44d0-b23e-cfcfa0ced522
+		summarizeBy: sum
+		sourceColumn: pop_15_plus_non_scol_sans_dipl_ou_bepc_brev_des_coll_dnb_prin
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_non_scol_enseignement_sup_princ
+		dataType: double
+		lineageTag: 6bcf420c-96f9-49a3-8a53-79d78a6cc0d8
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_non_scol_enseignement_sup_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_1_an_ou_plus_localisee_1_an_auparavant_princ
+		dataType: double
+		lineageTag: eb4db502-46e8-4285-b17f-7ffbf685d70f
+		summarizeBy: sum
+		sourceColumn: pop_1_an_ou_plus_localisee_1_an_auparavant_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_24_ans_princ
+		dataType: double
+		lineageTag: b84662b0-9da0-4551-86b2-413c8f79c6ea
+		summarizeBy: sum
+		sourceColumn: pop_15_24_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_mariee_princ
+		dataType: double
+		lineageTag: aaca8df0-a876-4bcd-a5b0-a041130554a5
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_mariee_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_non_mariee_princ
+		dataType: double
+		lineageTag: 6f84ab0a-514e-4bfa-9989-9ef112c6d718
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_non_mariee_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_25_54_ans_princ
+		dataType: double
+		lineageTag: eaaf39c2-79a2-4018-89d6-a594c5fca8d7
+		summarizeBy: sum
+		sourceColumn: pop_25_54_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_type_appart_1991_a_2005_princ
+		dataType: double
+		lineageTag: 7d4d29ba-931a-4bed-98b8-11647c443c96
+		summarizeBy: sum
+		sourceColumn: res_princ_type_appart_1991_a_2005_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_type_appart_2006_a_2013_princ
+		dataType: double
+		lineageTag: 09b0cd83-e5d1-4935-8ee5-85983cc94766
+		summarizeBy: sum
+		sourceColumn: res_princ_type_appart_2006_a_2013_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_type_appart_avt_1919_princ
+		dataType: double
+		lineageTag: edea6902-8353-4149-b459-842db60c0507
+		summarizeBy: sum
+		sourceColumn: res_princ_type_appart_avt_1919_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_type_appart_1919_a_1945_princ
+		dataType: double
+		lineageTag: 7bc8505b-34c0-499f-9b0b-fb6f3f12f126
+		summarizeBy: sum
+		sourceColumn: res_princ_type_appart_1919_a_1945_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_type_appart_1946_a_1970_princ
+		dataType: double
+		lineageTag: dc577776-3d75-450c-8cc4-b97c8a6b5e67
+		summarizeBy: sum
+		sourceColumn: res_princ_type_appart_1946_a_1970_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_type_appart_1971_a_1990_princ
+		dataType: double
+		lineageTag: c5fb5c51-c26e-4fae-a097-6578ebbde797
+		summarizeBy: sum
+		sourceColumn: res_princ_type_appart_1971_a_1990_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_type_maison_1991_a_2005_princ
+		dataType: double
+		lineageTag: 65e5eb4f-157c-49df-8510-c2a64fbd11ea
+		summarizeBy: sum
+		sourceColumn: res_princ_type_maison_1991_a_2005_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_type_maison_2006_a_2013_princ
+		dataType: double
+		lineageTag: 7bbadeea-ba6a-4a8d-952d-396283c699a8
+		summarizeBy: sum
+		sourceColumn: res_princ_type_maison_2006_a_2013_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_type_maison_avt_1919_princ
+		dataType: double
+		lineageTag: ba21d5ee-7f7b-4f71-9c7d-b2917d7e30bc
+		summarizeBy: sum
+		sourceColumn: res_princ_type_maison_avt_1919_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_type_maison_1919_a_1945_princ
+		dataType: double
+		lineageTag: dee6bfc6-5e31-4057-a654-6f73406a42d6
+		summarizeBy: sum
+		sourceColumn: res_princ_type_maison_1919_a_1945_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_type_maison_1946_a_1970_princ
+		dataType: double
+		lineageTag: bd769f50-5dcf-46b3-a6b2-17f6554d63e1
+		summarizeBy: sum
+		sourceColumn: res_princ_type_maison_1946_a_1970_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_type_maison_1971_a_1990_princ
+		dataType: double
+		lineageTag: a26bf078-77f0-4edf-a967-794ba6f309ad
+		summarizeBy: sum
+		sourceColumn: res_princ_type_maison_1971_a_1990_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_1991_a_2005_princ
+		dataType: double
+		lineageTag: 28fa84f8-e189-48de-84dd-dc69484c0b86
+		summarizeBy: sum
+		sourceColumn: res_princ_1991_a_2005_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_2006_a_2013_princ
+		dataType: double
+		lineageTag: 54eeaca3-baa1-4c77-9a97-b043b7eec69f
+		summarizeBy: sum
+		sourceColumn: res_princ_2006_a_2013_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_avt_1919_princ
+		dataType: double
+		lineageTag: d0ced38e-407c-4396-9d73-03b097f64b30
+		summarizeBy: sum
+		sourceColumn: res_princ_avt_1919_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_1919_a_1945_princ
+		dataType: double
+		lineageTag: c87f84d0-c684-40eb-9a87-2cba6bfb4ee5
+		summarizeBy: sum
+		sourceColumn: res_princ_1919_a_1945_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_1946_a_1970_princ
+		dataType: double
+		lineageTag: 879449df-64d5-4fee-b085-57b5b6c734b4
+		summarizeBy: sum
+		sourceColumn: res_princ_1946_a_1970_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_1971_a_1990_princ
+		dataType: double
+		lineageTag: c896fb9f-ae64-4b88-a794-343bfe456873
+		summarizeBy: sum
+		sourceColumn: res_princ_1971_a_1990_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_avt_2014_princ
+		dataType: double
+		lineageTag: aca352a2-3825-4590-a487-e2c0cc2ee9a2
+		summarizeBy: sum
+		sourceColumn: res_princ_avt_2014_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_avec_bain_douche_wc_princ
+		dataType: double
+		lineageTag: 6c400d89-4d93-4758-a300-84166c987b0a
+		summarizeBy: sum
+		sourceColumn: res_princ_avec_bain_douche_wc_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cases_traditionnelles_princ
+		dataType: double
+		lineageTag: b855359f-1d59-444b-9377-478b692813a1
+		summarizeBy: sum
+		sourceColumn: cases_traditionnelles_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_avec_chauffe_eau_solaire_princ
+		dataType: double
+		lineageTag: 91abb5e4-4071-44a5-b06f-f09929ed542b
+		summarizeBy: sum
+		sourceColumn: res_princ_avec_chauffe_eau_solaire_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_avec_piece_climatisee_princ
+		dataType: double
+		lineageTag: fcb31871-a1da-4f0c-b75a-4970e87fdfb3
+		summarizeBy: sum
+		sourceColumn: res_princ_avec_piece_climatisee_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_avec_eau_chaude_princ
+		dataType: double
+		lineageTag: 95e03fc6-9949-49fc-9d8c-bd911a3005d5
+		summarizeBy: sum
+		sourceColumn: res_princ_avec_eau_chaude_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_avec_electricite_princ
+		dataType: double
+		lineageTag: 68610f01-6914-4f46-a511-814390f2dc2d
+		summarizeBy: sum
+		sourceColumn: res_princ_avec_electricite_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column habitations_de_fortune_princ
+		dataType: double
+		lineageTag: a29382bc-90c1-4468-9b12-1ec39759d0d4
+		summarizeBy: sum
+		sourceColumn: habitations_de_fortune_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column maisons_ou_immeubles_en_bois_princ
+		dataType: double
+		lineageTag: 1918fabc-1d69-4544-a54d-3908162416ff
+		summarizeBy: sum
+		sourceColumn: maisons_ou_immeubles_en_bois_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column maisons_ou_immeubles_en_dur_princ
+		dataType: double
+		lineageTag: fb2a7683-2eb3-4e97-8aca-a787a6a8380d
+		summarizeBy: sum
+		sourceColumn: maisons_ou_immeubles_en_dur_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_avec_tout_a_l_egout_princ
+		dataType: double
+		lineageTag: 887ec58b-a9fc-44a5-bade-f5328b15761e
+		summarizeBy: sum
+		sourceColumn: res_princ_avec_tout_a_l_egout_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occ_15_ans_ou_plus_deux_roues_motorise_princ
+		dataType: double
+		lineageTag: 9a886904-19f1-473f-807a-24abf47fc72c
+		summarizeBy: sum
+		sourceColumn: actifs_occ_15_ans_ou_plus_deux_roues_motorise_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_occ_15_ans_ou_plus_velo_princ
+		dataType: double
+		lineageTag: 0a85a38e-3d76-429d-9e51-1bcdfa3fb1f3
+		summarizeBy: sum
+		sourceColumn: actifs_occ_15_ans_ou_plus_velo_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_bac_brevet_pro_ou_equiv_princ
+		dataType: double
+		lineageTag: 1ea001b0-6f2a-4da3-a85d-9d21f2132f98
+		summarizeBy: sum
+		sourceColumn: actifs_bac_brevet_pro_ou_equiv_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_bepc_brevet_des_colleges_dnb_princ
+		dataType: double
+		lineageTag: a541327a-5856-4418-8933-8920d8db3990
+		summarizeBy: sum
+		sourceColumn: actifs_bepc_brevet_des_colleges_dnb_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_cap_bep_ou_equiv_princ
+		dataType: double
+		lineageTag: 39e47426-84b9-4d60-b266-847fa878f680
+		summarizeBy: sum
+		sourceColumn: actifs_cap_bep_ou_equiv_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_sans_diplome_ou_cep_princ
+		dataType: double
+		lineageTag: 79a2c723-2e74-4bc1-8f34-9151b478b48a
+		summarizeBy: sum
+		sourceColumn: actifs_sans_diplome_ou_cep_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_enseignement_sup_de_niveau_bac_2_princ
+		dataType: double
+		lineageTag: 9a38bf4d-96d6-4317-9c5a-29792bf2762a
+		summarizeBy: sum
+		sourceColumn: actifs_enseignement_sup_de_niveau_bac_2_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_enseignement_sup_de_niveau_bac_3_ou_4_princ
+		dataType: double
+		lineageTag: 0f4c8f02-3ddb-4a44-a534-785297903fb3
+		summarizeBy: sum
+		sourceColumn: actifs_enseignement_sup_de_niveau_bac_3_ou_4_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actifs_enseignement_sup_de_niveau_bac_5_ou_plus_princ
+		dataType: double
+		lineageTag: b4284df1-ab4f-496a-8b79-ef25c7831590
+		summarizeBy: sum
+		sourceColumn: actifs_enseignement_sup_de_niveau_bac_5_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column chomeurs_de_15_24_ans_princ
+		dataType: double
+		lineageTag: fca0be07-11e3-4188-9600-1f3031044729
+		summarizeBy: sum
+		sourceColumn: chomeurs_de_15_24_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column chomeurs_de_25_54_ans_princ
+		dataType: double
+		lineageTag: bd460ccb-b369-4075-a8ec-f3a266a6cd3b
+		summarizeBy: sum
+		sourceColumn: chomeurs_de_25_54_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column chomeurs_de_55_64_ans_princ
+		dataType: double
+		lineageTag: 2d3d9205-5c72-49f1-82b4-f9055e1da0f8
+		summarizeBy: sum
+		sourceColumn: chomeurs_de_55_64_ans_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column chomeurs_bac_brevet_pro_ou_equiv_princ
+		dataType: double
+		lineageTag: 8332958f-d733-4c0c-8275-5bdf70d905e7
+		summarizeBy: sum
+		sourceColumn: chomeurs_bac_brevet_pro_ou_equiv_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column chomeurs_bepc_brevet_des_colleges_dnb_princ
+		dataType: double
+		lineageTag: 2dcdfbee-47e9-4d38-bbae-2e8c4463e3da
+		summarizeBy: sum
+		sourceColumn: chomeurs_bepc_brevet_des_colleges_dnb_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column chomeurs_cap_bep_ou_equiv_princ
+		dataType: double
+		lineageTag: 6a8c40f8-1144-49fd-94cb-1e211200aaa4
+		summarizeBy: sum
+		sourceColumn: chomeurs_cap_bep_ou_equiv_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column chomeurs_sans_diplome_ou_cep_princ
+		dataType: double
+		lineageTag: 7c49a9ac-f07b-492e-8ef2-47ae7ac04130
+		summarizeBy: sum
+		sourceColumn: chomeurs_sans_diplome_ou_cep_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column chomeurs_enseignement_sup_de_niveau_bac_2_princ
+		dataType: double
+		lineageTag: 070a4fe5-a809-41ea-90e4-82398034c096
+		summarizeBy: sum
+		sourceColumn: chomeurs_enseignement_sup_de_niveau_bac_2_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column chomeurs_enseignement_sup_de_niveau_bac_3_ou_4_princ
+		dataType: double
+		lineageTag: 051dadfc-a800-4a2a-8d27-67c310e7a035
+		summarizeBy: sum
+		sourceColumn: chomeurs_enseignement_sup_de_niveau_bac_3_ou_4_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column chomeurs_enseignement_sup_de_niveau_bac_5_ou_plus_princ
+		dataType: double
+		lineageTag: c12df9da-5cc0-4176-ab19-ecad27820100
+		summarizeBy: sum
+		sourceColumn: chomeurs_enseignement_sup_de_niveau_bac_5_ou_plus_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_15_ans_ou_plus_non_scolarisee_princ
+		dataType: double
+		lineageTag: e27e5489-67fa-42a7-81c3-23a018231b4a
+		summarizeBy: sum
+		sourceColumn: femmes_15_ans_ou_plus_non_scolarisee_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_15_ans_ou_plus_non_scol_bac_brevet_pro_ou_equiv_princ
+		dataType: double
+		lineageTag: 77a1e804-7a19-4244-8993-96cc18742aa0
+		summarizeBy: sum
+		sourceColumn: femmes_15_ans_ou_plus_non_scol_bac_brevet_pro_ou_equiv_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_15_ans_ou_plus_non_scol_bepc_brevet_des_colleg_dnb_princ
+		dataType: double
+		lineageTag: bcf8f062-efc2-431c-b3e3-5257c5b9d9cd
+		summarizeBy: sum
+		sourceColumn: femmes_15_ans_ou_plus_non_scol_bepc_brevet_des_colleg_dnb_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_15_ans_ou_plus_non_scol_cap_bep_ou_equiv_princ
+		dataType: double
+		lineageTag: f5da1840-de84-465d-bce0-13e9194813da
+		summarizeBy: sum
+		sourceColumn: femmes_15_ans_ou_plus_non_scol_cap_bep_ou_equiv_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_15_ans_ou_plus_non_scol_sans_diplome_ou_cep_princ
+		dataType: double
+		lineageTag: 4217e385-b476-40fd-89fa-2f1ac13c11a0
+		summarizeBy: sum
+		sourceColumn: femmes_15_ans_ou_plus_non_scol_sans_diplome_ou_cep_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femmes_15_ans_ou_plus_non_scol_enseig_sup_de_niveau_bac_2_princ
+		dataType: double
+		lineageTag: ffb9e238-4a09-485d-a9f5-c7f64e7662f8
+		summarizeBy: sum
+		sourceColumn: femmes_15_ans_ou_plus_non_scol_enseig_sup_de_niveau_bac_2_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femm_15_ans_ou_plus_non_scol_ense_sup_de_nivea_bac_3_ou_4_princ
+		dataType: double
+		lineageTag: b94dcb1a-6f7d-488f-a100-3b007a895a9c
+		summarizeBy: sum
+		sourceColumn: femm_15_ans_ou_plus_non_scol_ense_sup_de_nivea_bac_3_ou_4_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column femm_15_plus_non_scol_ense_sup_de_nive_bac_5_ou_plus_prin
+		dataType: double
+		lineageTag: 4bd1bcdc-0fb1-4532-9376-ed87b8bdeb45
+		summarizeBy: sum
+		sourceColumn: femm_15_plus_non_scol_ense_sup_de_nive_bac_5_ou_plus_prin
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_15_ans_ou_plus_non_scolarisee_princ
+		dataType: double
+		lineageTag: 030b27a1-3149-48d8-8223-99d34d671f53
+		summarizeBy: sum
+		sourceColumn: hommes_15_ans_ou_plus_non_scolarisee_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_15_ans_ou_plus_non_scol_bac_brevet_pro_ou_equiv_princ
+		dataType: double
+		lineageTag: cf338150-1bce-4eff-a4a5-eb35268bb156
+		summarizeBy: sum
+		sourceColumn: hommes_15_ans_ou_plus_non_scol_bac_brevet_pro_ou_equiv_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_15_ans_ou_plus_non_scol_bepc_brevet_des_colleg_dnb_princ
+		dataType: double
+		lineageTag: ddc8addd-5e29-4cb6-a486-cf7608e3712a
+		summarizeBy: sum
+		sourceColumn: hommes_15_ans_ou_plus_non_scol_bepc_brevet_des_colleg_dnb_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_15_ans_ou_plus_non_scol_cap_bep_ou_equiv_princ
+		dataType: double
+		lineageTag: 84db2f79-8431-40fb-ba21-7d47c1f6dade
+		summarizeBy: sum
+		sourceColumn: hommes_15_ans_ou_plus_non_scol_cap_bep_ou_equiv_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_15_ans_ou_plus_non_scol_sans_diplome_ou_cep_princ
+		dataType: double
+		lineageTag: d2f7e6a3-ddfb-41f3-b695-55f16dafe948
+		summarizeBy: sum
+		sourceColumn: hommes_15_ans_ou_plus_non_scol_sans_diplome_ou_cep_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hommes_15_ans_ou_plus_non_scol_enseig_sup_de_niveau_bac_2_princ
+		dataType: double
+		lineageTag: aa53b4b4-28f3-472c-9eea-698e682416c4
+		summarizeBy: sum
+		sourceColumn: hommes_15_ans_ou_plus_non_scol_enseig_sup_de_niveau_bac_2_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column homm_15_ans_ou_plus_non_scol_ense_sup_de_nivea_bac_3_ou_4_princ
+		dataType: double
+		lineageTag: 5b005442-159a-49af-9292-fcbcb5e74bb3
+		summarizeBy: sum
+		sourceColumn: homm_15_ans_ou_plus_non_scol_ense_sup_de_nivea_bac_3_ou_4_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column homm_15_plus_non_scol_ense_sup_de_nive_bac_5_ou_plus_prin
+		dataType: double
+		lineageTag: ea85473f-2818-4f1b-8d52-2865bf51a293
+		summarizeBy: sum
+		sourceColumn: homm_15_plus_non_scol_ense_sup_de_nive_bac_5_ou_plus_prin
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_non_scol_bac_brevet_pro_ou_equiv_princ
+		dataType: double
+		lineageTag: a6b256db-9a73-41de-8334-d4777bced624
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_non_scol_bac_brevet_pro_ou_equiv_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_non_scol_bepc_brevet_des_colleges_dnb_princ
+		dataType: double
+		lineageTag: 0fadc4bb-73ad-4707-ade1-a03d79bec7c8
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_non_scol_bepc_brevet_des_colleges_dnb_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_non_scol_cap_bep_ou_equiv_princ
+		dataType: double
+		lineageTag: 825cd503-81f1-4061-952f-34f5f5fb5302
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_non_scol_cap_bep_ou_equiv_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_non_scol_sans_diplome_ou_cep_princ
+		dataType: double
+		lineageTag: 7f49bc67-9d1d-4b94-a3f1-932980df0c22
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_non_scol_sans_diplome_ou_cep_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_non_scol_enseignem_sup_de_niveau_bac_2_princ
+		dataType: double
+		lineageTag: 269d4038-950c-469e-8856-fdd61c53f8f4
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_non_scol_enseignem_sup_de_niveau_bac_2_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_non_scol_ensei_sup_de_nivea_bac_3_ou_4_princ
+		dataType: double
+		lineageTag: 2ab0eccf-311b-405b-aa4c-62ce6df39a59
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_non_scol_ensei_sup_de_nivea_bac_3_ou_4_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_non_scol_ense_sup_de_nive_bac_5_ou_plus_prin
+		dataType: double
+		lineageTag: 31595488-b8e7-4d36-9615-5621f65bc8d9
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_non_scol_ense_sup_de_nive_bac_5_ou_plus_prin
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_en_concubinage_ou_union_libre_princ
+		dataType: double
+		lineageTag: 038228fd-e7fb-441e-afd5-3edb740eed01
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_en_concubinage_ou_union_libre_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_divorcee_princ
+		dataType: double
+		lineageTag: 4deb7eac-1fcc-45b3-8cd5-a72e559e4043
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_divorcee_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_pacsee_princ
+		dataType: double
+		lineageTag: 94fd7d25-a99c-40c1-8ed6-afbc0c1b08f8
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_pacsee_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pop_15_ans_ou_plus_veuves_ou_veufs_princ
+		dataType: double
+		lineageTag: 7984ba7c-afe6-4d8e-bc93-1b97ebf7fe23
+		summarizeBy: sum
+		sourceColumn: pop_15_ans_ou_plus_veuves_ou_veufs_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_type_appart_2006_a_2019_princ
+		dataType: double
+		lineageTag: 1e0cfde1-9adf-413d-b0bc-9c66e4bb59eb
+		summarizeBy: sum
+		sourceColumn: res_princ_type_appart_2006_a_2019_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_type_maison_2006_a_2019_princ
+		dataType: double
+		lineageTag: d14d3a3f-4799-44ae-b0a4-68c852db31a9
+		summarizeBy: sum
+		sourceColumn: res_princ_type_maison_2006_a_2019_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_2006_a_2019_princ
+		dataType: double
+		lineageTag: 824f367e-1313-44ca-a017-515ea0aa2cf2
+		summarizeBy: sum
+		sourceColumn: res_princ_2006_a_2019_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column res_princ_avt_2020_princ
+		dataType: double
+		lineageTag: d62a6165-7c33-4e58-8446-a27ab6eebfef
+		summarizeBy: sum
+		sourceColumn: res_princ_avt_2020_princ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column geo_sk
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 629c182a-183a-4bf9-8710-54a565757834
+		summarizeBy: none
+		sourceColumn: geo_sk
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public fact_insee_population' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("aws-1-eu-west-3.pooler.supabase.com", "postgres"),
+				    public_fact_insee_population = Source{[Schema="public",Item="fact_insee_population"]}[Data],
+				    #"Colonnes supprimées" = Table.RemoveColumns(public_fact_insee_population,{"fact_population_id"})
+				in
+				    #"Colonnes supprimées"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

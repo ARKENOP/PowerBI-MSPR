@@ -1,0 +1,608 @@
+table 'public fact_insee_fiscal'
+	lineageTag: 2022d6cf-1ed6-4616-b343-d5a196e08960
+
+	column annee
+		dataType: int64
+		formatString: 0
+		lineageTag: 4d0d022f-56d6-4e62-b55f-d54dc8b8fc29
+		summarizeBy: none
+		sourceColumn: annee
+
+		annotation SummarizationSetBy = User
+
+	column 1er_decile_du_niveau_de_vie
+		dataType: double
+		lineageTag: 7ffab4aa-82cf-402f-97b8-e993bf548b5d
+		summarizeBy: sum
+		sourceColumn: 1er_decile_du_niveau_de_vie
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 9e_decile_du_niveau_de_vie
+		dataType: double
+		lineageTag: 3f7fe7cb-1ca0-44d5-82e8-9aa93f9ba451
+		summarizeBy: sum
+		sourceColumn: 9e_decile_du_niveau_de_vie
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column mediane_du_niveau_vie
+		dataType: double
+		lineageTag: e1903c71-54af-4815-aa75-dac428c19f3c
+		summarizeBy: sum
+		sourceColumn: mediane_du_niveau_vie
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nombre_de_menages_fiscaux
+		dataType: double
+		lineageTag: 28c10806-7517-49b3-a000-9e0a3b07e598
+		summarizeBy: sum
+		sourceColumn: nombre_de_menages_fiscaux
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nombre_de_personnes_dans_les_menages_fiscaux
+		dataType: double
+		lineageTag: 882db55e-9995-4c9d-a830-cb853f7e8971
+		summarizeBy: sum
+		sourceColumn: nombre_de_personnes_dans_les_menages_fiscaux
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column part_des_revenus_d_activite
+		dataType: double
+		lineageTag: 6928b4d6-d652-4945-9224-908400457c82
+		summarizeBy: sum
+		sourceColumn: part_des_revenus_d_activite
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column dont_part_des_revenus_des_activites_non_salariees
+		dataType: double
+		lineageTag: ccd8476f-dc51-4727-a4a9-8c1f79f74cc1
+		summarizeBy: sum
+		sourceColumn: dont_part_des_revenus_des_activites_non_salariees
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column dont_part_des_indemnites_de_chomage
+		dataType: double
+		lineageTag: f8c50099-e544-48f9-aea5-43eed8242d82
+		summarizeBy: sum
+		sourceColumn: dont_part_des_indemnites_de_chomage
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column part_des_menages_fiscaux_imposes
+		dataType: double
+		lineageTag: 953c9f0e-c8ef-467a-a231-16a8dbe0d7c0
+		summarizeBy: sum
+		sourceColumn: part_des_menages_fiscaux_imposes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column part_des_impots
+		dataType: double
+		lineageTag: ec24b284-a58d-4bee-94c3-232f6ed24abe
+		summarizeBy: sum
+		sourceColumn: part_des_impots
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column part_des_revenus_du_patrimoine_et_autres_revenus
+		dataType: double
+		lineageTag: 1f936cde-f51b-4568-adc4-f520600ca300
+		summarizeBy: sum
+		sourceColumn: part_des_revenus_du_patrimoine_et_autres_revenus
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column part_des_pensions_retraites_et_rentes
+		dataType: double
+		lineageTag: a34d14f2-e154-4e4f-8d6c-b670eed183bd
+		summarizeBy: sum
+		sourceColumn: part_des_pensions_retraites_et_rentes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column dont_part_des_prestations_familiales
+		dataType: double
+		lineageTag: 59b1dbbf-34f7-4740-bcd6-c7632618173e
+		summarizeBy: sum
+		sourceColumn: dont_part_des_prestations_familiales
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column dont_part_des_prestations_logement
+		dataType: double
+		lineageTag: cf2ab1ac-4580-4ffd-8e83-2aa295e416fd
+		summarizeBy: sum
+		sourceColumn: dont_part_des_prestations_logement
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column dont_part_des_minima_sociaux
+		dataType: double
+		lineageTag: 25ef2c72-186f-4e36-9fea-d5250beb98b3
+		summarizeBy: sum
+		sourceColumn: dont_part_des_minima_sociaux
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column part_de_l_ensemble_des_prestations_sociales
+		dataType: double
+		lineageTag: 2e007551-3fe1-415a-990c-739c135f26ab
+		summarizeBy: sum
+		sourceColumn: part_de_l_ensemble_des_prestations_sociales
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column dont_part_des_salaires_et_traitements
+		dataType: double
+		lineageTag: 330ebbef-736b-4a36-a35c-75e2da224254
+		summarizeBy: sum
+		sourceColumn: dont_part_des_salaires_et_traitements
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column rapport_interdecile_9e_decile_1er_decile
+		dataType: double
+		lineageTag: 028066b7-0e17-405c-bd6e-e7562aa0cb8c
+		summarizeBy: sum
+		sourceColumn: rapport_interdecile_9e_decile_1er_decile
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen
+		dataType: double
+		lineageTag: febfa6f3-665d-447b-85de-e2ffc7ad6c26
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_25_39_ans
+		dataType: double
+		lineageTag: 91065dee-5517-4ff3-88c1-506f2a247dbc
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_25_39_ans
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_40_49_ans
+		dataType: double
+		lineageTag: 2b021875-07b6-4ad3-8164-533eb0b51de2
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_40_49_ans
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_50_54_ans
+		dataType: double
+		lineageTag: a15c6274-5b90-46da-95a8-8cc21ecd8e31
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_50_54_ans
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_55_ans
+		dataType: double
+		lineageTag: 157d2b69-f700-4a65-b4ec-242f8f9066eb
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_55_ans
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_25_ans
+		dataType: double
+		lineageTag: f882ae31-463f-4fb6-8a85-45433240b925
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_25_ans
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_cadres_sup
+		dataType: double
+		lineageTag: bbf0b82c-c4dd-41d2-8cda-35b903df28ea
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_cadres_sup
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_prof_inter
+		dataType: double
+		lineageTag: 8f3121d8-d1fd-461d-a7a3-ba6ab160fad9
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_prof_inter
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_employes
+		dataType: double
+		lineageTag: faf9f9ad-8376-45b2-a852-9c09d8a16130
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_employes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_ouvriers
+		dataType: double
+		lineageTag: 2563f0c1-f72b-4c97-8322-eebedc986f65
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_ouvriers
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_f
+		dataType: double
+		lineageTag: fca49ab6-644f-4bcf-8335-c83c2e0d4d99
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_f
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_f_25_39_ans
+		dataType: double
+		lineageTag: 90096282-23b4-4560-abf3-42ba4def57f3
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_f_25_39_ans
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_f_40_49_ans
+		dataType: double
+		lineageTag: e7732b1f-3461-4307-b4f8-9fa5438f5573
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_f_40_49_ans
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_f_50_54_ans
+		dataType: double
+		lineageTag: b08b70f1-24e3-4860-9e32-553419550b64
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_f_50_54_ans
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_f_55_ans
+		dataType: double
+		lineageTag: 361f2e58-2d8d-4e55-9dcc-05126269e5fe
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_f_55_ans
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_f_25_ans
+		dataType: double
+		lineageTag: 22f240de-edd9-42f4-87b7-1e14ea4ed4da
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_f_25_ans
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_f_cadres_sup
+		dataType: double
+		lineageTag: e6e9f5f5-e0d3-4fb6-84e1-f8e0abc3da7a
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_f_cadres_sup
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_f_prof_inter
+		dataType: double
+		lineageTag: b684d71a-3bbb-43f0-bb37-ef57589e47b5
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_f_prof_inter
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_f_employes
+		dataType: double
+		lineageTag: b903b500-c0e2-40c9-90da-9b521f6cc104
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_f_employes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_f_ouvriers
+		dataType: double
+		lineageTag: 20798e0d-4cb5-4b76-81b5-a4d9cdededed
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_f_ouvriers
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_h
+		dataType: double
+		lineageTag: 0e36c894-c825-4df1-affc-20d947363fcb
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_h
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_h_25_39_ans
+		dataType: double
+		lineageTag: 8b4b3fa0-c779-434e-a008-312735dcf9a2
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_h_25_39_ans
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_h_40_49_ans
+		dataType: double
+		lineageTag: fd7c0f7b-268d-495c-823b-a30025b24872
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_h_40_49_ans
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_h_50_54_ans
+		dataType: double
+		lineageTag: 46896914-b0c3-45cd-a447-1669e2b9ca96
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_h_50_54_ans
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_h_55_ans
+		dataType: double
+		lineageTag: d86c19f3-5969-4489-8d21-2abcda24e678
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_h_55_ans
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_h_25_ans
+		dataType: double
+		lineageTag: d3b40725-a5b9-415c-8fa8-1a7dcbbf8534
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_h_25_ans
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_h_cadres_sup
+		dataType: double
+		lineageTag: 4735c6c6-b309-4038-b66a-824b30f7cf2f
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_h_cadres_sup
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_h_prof_inter
+		dataType: double
+		lineageTag: b0de4d2a-c6a7-48e7-9146-3cdafe2476fc
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_h_prof_inter
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_h_employes
+		dataType: double
+		lineageTag: 33584e67-0c9b-4403-8e9c-5a974edee5da
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_h_employes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salaire_net_eqtp_mensuel_moyen_h_ouvriers
+		dataType: double
+		lineageTag: 6e7846f3-4172-4762-a610-588bd36c4121
+		summarizeBy: sum
+		sourceColumn: salaire_net_eqtp_mensuel_moyen_h_ouvriers
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column taux_de_pauvrete_ensemble
+		dataType: double
+		lineageTag: 46b5dbf0-01b8-4ba6-b524-97674d033003
+		summarizeBy: sum
+		sourceColumn: taux_de_pauvrete_ensemble
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column taux_de_pauvrete_moins_de_30_ans
+		dataType: double
+		lineageTag: a6906993-8da8-4da9-85ea-88f6596e81c1
+		summarizeBy: sum
+		sourceColumn: taux_de_pauvrete_moins_de_30_ans
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column taux_de_pauvrete_30_a_39_ans
+		dataType: double
+		lineageTag: ba61405d-b046-4c7f-9db7-d6c813f52b29
+		summarizeBy: sum
+		sourceColumn: taux_de_pauvrete_30_a_39_ans
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column taux_de_pauvrete_40_a_49_ans
+		dataType: double
+		lineageTag: 08e18f2a-defa-4102-a51c-bb2ebd089d16
+		summarizeBy: sum
+		sourceColumn: taux_de_pauvrete_40_a_49_ans
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column taux_de_pauvrete_50_a_59_ans
+		dataType: double
+		lineageTag: 0d1419fb-c83d-4596-a4c1-1dc6a3f78ce2
+		summarizeBy: sum
+		sourceColumn: taux_de_pauvrete_50_a_59_ans
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column taux_de_pauvrete_60_a_74_ans
+		dataType: double
+		lineageTag: b907691f-b815-48a4-bcbc-5d60ba61eec4
+		summarizeBy: sum
+		sourceColumn: taux_de_pauvrete_60_a_74_ans
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column taux_de_pauvrete_75_ans_ou_plus
+		dataType: double
+		lineageTag: bc93446f-cf8d-4ffe-9f37-fdf4bd62d501
+		summarizeBy: sum
+		sourceColumn: taux_de_pauvrete_75_ans_ou_plus
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column taux_de_pauvrete_proprietaires
+		dataType: double
+		lineageTag: 36d0d043-8597-41fd-bc23-660e51afba42
+		summarizeBy: sum
+		sourceColumn: taux_de_pauvrete_proprietaires
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column taux_de_pauvrete_locataires
+		dataType: double
+		lineageTag: 59abdcc2-1a0f-4a38-8d07-1a73d6e99f3b
+		summarizeBy: sum
+		sourceColumn: taux_de_pauvrete_locataires
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column geo_sk
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: a291cff4-1953-4444-bd8d-d9afb0b6f10c
+		summarizeBy: none
+		sourceColumn: geo_sk
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public fact_insee_fiscal' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("aws-1-eu-west-3.pooler.supabase.com", "postgres"),
+				    public_fact_insee_fiscal = Source{[Schema="public",Item="fact_insee_fiscal"]}[Data],
+				    #"Colonnes supprimées" = Table.RemoveColumns(public_fact_insee_fiscal,{"fact_fiscal_id"})
+				in
+				    #"Colonnes supprimées"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

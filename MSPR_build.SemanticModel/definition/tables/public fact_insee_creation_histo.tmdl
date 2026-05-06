@@ -1,0 +1,158 @@
+table 'public fact_insee_creation_histo'
+	lineageTag: 3a8f49cc-6bcd-4082-b7f2-08660285b4e2
+
+	column annee
+		dataType: int64
+		formatString: 0
+		lineageTag: e3ba3126-c514-481b-bd71-38823da59db2
+		summarizeBy: none
+		sourceColumn: annee
+
+		annotation SummarizationSetBy = User
+
+	column creations_d_entr_ind
+		dataType: double
+		lineageTag: e888900d-fe28-4f81-b1dc-24c45543ae9c
+		summarizeBy: sum
+		sourceColumn: creations_d_entr_ind
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creations_d_entr
+		dataType: double
+		lineageTag: 330731e5-ed47-4360-a566-8707c85eb8c7
+		summarizeBy: sum
+		sourceColumn: creations_d_entr
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creations_d_ets_de_l_industrie
+		dataType: double
+		lineageTag: 07602f79-621f-4f08-a4e6-904a7a1c7f91
+		summarizeBy: sum
+		sourceColumn: creations_d_ets_de_l_industrie
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creations_d_ets_de_la_construction
+		dataType: double
+		lineageTag: 9a40b636-60b9-4c64-94be-f4766caa4cd8
+		summarizeBy: sum
+		sourceColumn: creations_d_ets_de_la_construction
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creations_d_ets_de_comm_transp_restau_heberg
+		dataType: double
+		lineageTag: a358a43c-60e1-4e0c-b885-67136372f417
+		summarizeBy: sum
+		sourceColumn: creations_d_ets_de_comm_transp_restau_heberg
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creations_d_ets_d_information_et_communication
+		dataType: double
+		lineageTag: 1c9dc353-86dd-4b26-854e-392d2c0fe71e
+		summarizeBy: sum
+		sourceColumn: creations_d_ets_d_information_et_communication
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creations_d_ets_d_activites_financieres_et_d_assurance
+		dataType: double
+		lineageTag: 54e0c067-78c8-4007-9955-0af88becf4ef
+		summarizeBy: sum
+		sourceColumn: creations_d_ets_d_activites_financieres_et_d_assurance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creations_d_ets_d_activites_immobilieres
+		dataType: double
+		lineageTag: 1cfd7917-d06f-4601-99e1-160d203e0603
+		summarizeBy: sum
+		sourceColumn: creations_d_ets_d_activites_immobilieres
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column crea_d_ets_d_acti_spec_scie_et_tech_et_serv_adm
+		dataType: double
+		lineageTag: 6c50eb8f-f5ab-448b-9a4f-b86417319fed
+		summarizeBy: sum
+		sourceColumn: crea_d_ets_d_acti_spec_scie_et_tech_et_serv_adm
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creati_d_ets_du_secteu_adm_publ_enseign_sante_et_action_sociale
+		dataType: double
+		lineageTag: 02421bfa-3956-4332-b5a1-5a48053ef4a3
+		summarizeBy: sum
+		sourceColumn: creati_d_ets_du_secteu_adm_publ_enseign_sante_et_action_sociale
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creations_d_ets_des_autres_activites_de_services
+		dataType: double
+		lineageTag: 0d777ae2-9d37-4b3e-ad17-57341b2c49ac
+		summarizeBy: sum
+		sourceColumn: creations_d_ets_des_autres_activites_de_services
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creations_d_ets
+		dataType: double
+		lineageTag: 5c550962-93cc-4bb5-9802-8a07615e5144
+		summarizeBy: sum
+		sourceColumn: creations_d_ets
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column geo_sk
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 7ada3495-ecee-4bf0-b927-f7590d28539e
+		summarizeBy: none
+		sourceColumn: geo_sk
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public fact_insee_creation_histo' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("aws-1-eu-west-3.pooler.supabase.com", "postgres"),
+				    public_fact_insee_creation_histo = Source{[Schema="public",Item="fact_insee_creation_histo"]}[Data],
+				    #"Colonnes supprimées" = Table.RemoveColumns(public_fact_insee_creation_histo,{"fact_creation_histo_id"})
+				in
+				    #"Colonnes supprimées"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

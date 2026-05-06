@@ -1,0 +1,221 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "c2ab515c91c880413e68",
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "height": 719.90253450238674,
+    "width": 1004.5912640556033,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "public dim_geographie"
+                    }
+                  },
+                  "Property": "code_commune"
+                }
+              },
+              "queryRef": "public dim_geographie.code_commune",
+              "nativeQueryRef": "CODGEO",
+              "displayName": "CODGEO"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "public dim_election"
+                    }
+                  },
+                  "Property": "annee_election"
+                }
+              },
+              "queryRef": "public dim_election.annee_election",
+              "nativeQueryRef": "Année",
+              "displayName": "Année"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "public dim_election"
+                    }
+                  },
+                  "Property": "tour"
+                }
+              },
+              "queryRef": "public dim_election.tour",
+              "nativeQueryRef": "T",
+              "displayName": "T"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "public fact_participation"
+                        }
+                      },
+                      "Property": "inscrits"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(public fact_participation.inscrits)",
+              "nativeQueryRef": "Inscrits",
+              "displayName": "Inscrits"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "public fact_participation"
+                        }
+                      },
+                      "Property": "votants"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(public fact_participation.votants)",
+              "nativeQueryRef": "Votants",
+              "displayName": "Votants"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "public dim_candidat_liste"
+                    }
+                  },
+                  "Property": "code_nuance"
+                }
+              },
+              "queryRef": "public dim_candidat_liste.code_nuance",
+              "nativeQueryRef": "Nuance",
+              "displayName": "Nuance"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "public fact_resultats_liste"
+                        }
+                      },
+                      "Property": "voix"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(public fact_resultats_liste.voix)",
+              "nativeQueryRef": "Voix",
+              "displayName": "Voix"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "public dim_geographie"
+                  }
+                },
+                "Property": "code_commune"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "67.99757947970542D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "public dim_geographie.code_commune"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "89.99777946104518D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(public fact_participation.inscrits)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "78.23277704139446D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(public fact_participation.votants)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "38.91328578761568D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "public dim_election.tour"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,63 @@
+table 'public dim_geographie'
+	lineageTag: eb60f0f9-7c4f-44b7-be92-914b9ba6ac07
+
+	column geo_sk
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 531030b5-1c7c-493b-b0f9-ee41cd36bac6
+		summarizeBy: none
+		sourceColumn: geo_sk
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_commune
+		dataType: string
+		lineageTag: ac34a72a-2092-427f-aa31-394f5c60813d
+		summarizeBy: none
+		sourceColumn: code_commune
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_departement
+		dataType: string
+		lineageTag: 29edfc3b-ff9f-406e-8929-40bde930fa08
+		summarizeBy: none
+		sourceColumn: code_departement
+
+		annotation SummarizationSetBy = Automatic
+
+	column libelle_departement
+		dataType: string
+		lineageTag: 3ab75c45-aba2-4c19-b402-00904be5a08e
+		dataCategory: StateOrProvince
+		summarizeBy: none
+		sourceColumn: libelle_departement
+
+		annotation SummarizationSetBy = Automatic
+
+	column libelle_commune
+		dataType: string
+		lineageTag: 456633b2-7d83-4c28-b835-7376f9cbb31c
+		dataCategory: Place
+		summarizeBy: none
+		sourceColumn: libelle_commune
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public dim_geographie' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("aws-1-eu-west-3.pooler.supabase.com", "postgres"),
+				    public_dim_geographie = Source{[Schema="public",Item="dim_geographie"]}[Data],
+				    #"Type modifié" = Table.TransformColumnTypes(public_dim_geographie,{{"geo_sk", Int64.Type}})
+				in
+				    #"Type modifié"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

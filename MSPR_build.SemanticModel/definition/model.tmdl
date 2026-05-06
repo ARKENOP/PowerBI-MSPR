@@ -1,0 +1,33 @@
+model Model
+	culture: fr-FR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: fr-FR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["public dim_candidat_liste","public dim_election","public dim_geographie","public dim_nuances_partis","public fact_insee_births_deaths","public fact_insee_composition","public fact_insee_creation_entreprises","public fact_insee_creation_histo","public fact_insee_electoral_data","public fact_insee_employment","public fact_insee_equipements_services","public fact_insee_fiscal","public fact_insee_historical_demography","public fact_insee_population","public fact_participation","public fact_resultats_liste"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table 'public dim_candidat_liste'
+ref table 'public dim_election'
+ref table 'public dim_geographie'
+ref table 'public dim_nuances_partis'
+ref table 'public fact_insee_composition'
+ref table 'public fact_insee_creation_entreprises'
+ref table 'public fact_insee_creation_histo'
+ref table 'public fact_insee_electoral_data'
+ref table 'public fact_insee_employment'
+ref table 'public fact_insee_equipements_services'
+ref table 'public fact_insee_fiscal'
+ref table 'public fact_insee_historical_demography'
+ref table 'public fact_insee_population'
+ref table 'public fact_participation'
+ref table 'public fact_resultats_liste'
+ref table 'public fact_insee_births_deaths'
+
+ref cultureInfo fr-FR
+

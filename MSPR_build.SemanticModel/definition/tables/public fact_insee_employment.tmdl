@@ -1,0 +1,1058 @@
+table 'public fact_insee_employment'
+	lineageTag: c2c0da5a-9081-48b5-b082-c377326ffff6
+
+	column annee
+		dataType: int64
+		formatString: 0
+		lineageTag: ce9ae696-d55e-4204-931a-f870a2586c04
+		summarizeBy: none
+		sourceColumn: annee
+
+		annotation SummarizationSetBy = User
+
+	column unites_legales_de_l_industrie_economiquement_actives
+		dataType: double
+		lineageTag: 54952476-eaf5-4966-ae07-28ec4a01a6b2
+		summarizeBy: sum
+		sourceColumn: unites_legales_de_l_industrie_economiquement_actives
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column unites_legales_de_la_construction_economiquement_actives
+		dataType: double
+		lineageTag: 45450aad-4a46-46fb-bec8-c00943f66872
+		summarizeBy: sum
+		sourceColumn: unites_legales_de_la_construction_economiquement_actives
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column unites_legales_de_commerc_transp_restau_heberg_economiq_actives
+		dataType: double
+		lineageTag: 7be9197b-fb4d-4cbe-8275-2bf38c6f5afb
+		summarizeBy: sum
+		sourceColumn: unites_legales_de_commerc_transp_restau_heberg_economiq_actives
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column unites_legales_d_information_et_communicati_economiquem_actives
+		dataType: double
+		lineageTag: bc99736b-2d8e-4107-99e2-00b492297bc8
+		summarizeBy: sum
+		sourceColumn: unites_legales_d_information_et_communicati_economiquem_actives
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column unites_legales_d_activit_financi_et_d_assuranc_economiq_actives
+		dataType: double
+		lineageTag: c1d3b1f1-12bd-441c-b305-d9eb4e54517f
+		summarizeBy: sum
+		sourceColumn: unites_legales_d_activit_financi_et_d_assuranc_economiq_actives
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column unites_legales_d_activites_immobilieres_economiquement_actives
+		dataType: double
+		lineageTag: f346fb20-1253-44bc-aa41-357db342f9a2
+		summarizeBy: sum
+		sourceColumn: unites_legales_d_activites_immobilieres_economiquement_actives
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column unit_lega_d_acti_spec_scie_et_tech_et_serv_adm_econ_acti
+		dataType: double
+		lineageTag: 397c5899-8eeb-4ab4-8060-c529c91ce67b
+		summarizeBy: sum
+		sourceColumn: unit_lega_d_acti_spec_scie_et_tech_et_serv_adm_econ_acti
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column unit_lega_du_sect_adm_publ_ense_sant_et_actio_socia_econo_activ
+		dataType: double
+		lineageTag: 5ca1975b-73ce-485f-9ab2-f7f61a95ca41
+		summarizeBy: sum
+		sourceColumn: unit_lega_du_sect_adm_publ_ense_sant_et_actio_socia_econo_activ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column unites_legales_des_autres_activite_de_services_economiq_actives
+		dataType: double
+		lineageTag: 31243217-2bfa-4c7a-9107-09c2a13e7be3
+		summarizeBy: sum
+		sourceColumn: unites_legales_des_autres_activite_de_services_economiq_actives
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column unites_legales_economiquement_actives
+		dataType: double
+		lineageTag: ee9b622e-bc9f-4533-b3e0-cdb64a46ce24
+		summarizeBy: sum
+		sourceColumn: unites_legales_economiquement_actives
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column particuliers_employeurs_assistants_maternels
+		dataType: double
+		lineageTag: e7475b20-c95a-4af0-a879-fa36a4175be0
+		summarizeBy: sum
+		sourceColumn: particuliers_employeurs_assistants_maternels
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column particuliers_employeurs_autres
+		dataType: double
+		lineageTag: ae6e3589-8bd6-46ad-b4b8-0d5bbc9920fd
+		summarizeBy: sum
+		sourceColumn: particuliers_employeurs_autres
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_agriculture_sans_salarie_fin_2023
+		dataType: double
+		lineageTag: 21f0b245-1e05-4430-9131-48dc77b240fe
+		summarizeBy: sum
+		sourceColumn: etablissements_agriculture_sans_salarie_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_agriculture_10_a_19_salaries_fin_2023
+		dataType: double
+		lineageTag: 69f6fdc0-c25e-4ce7-bafc-b2cfaf722ec0
+		summarizeBy: sum
+		sourceColumn: etablissements_agriculture_10_a_19_salaries_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_agriculture_1_a_9_salaries_fin_2023
+		dataType: double
+		lineageTag: 6e444bc3-1f7c-46b1-b2c6-2d51e1d50d0a
+		summarizeBy: sum
+		sourceColumn: etablissements_agriculture_1_a_9_salaries_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_agriculture_20_a_49_salaries_fin_2023
+		dataType: double
+		lineageTag: 9b64860f-719f-4bbe-bb00-43be60ba65ef
+		summarizeBy: sum
+		sourceColumn: etablissements_agriculture_20_a_49_salaries_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_agriculture_fin_2023
+		dataType: double
+		lineageTag: 654d4e1e-6a3a-4e27-a037-f9d6ef8bc63a
+		summarizeBy: sum
+		sourceColumn: etablissements_agriculture_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_agriculture_50_salaries_ou_plus_fin_2023
+		dataType: double
+		lineageTag: 353197e4-4b52-41fa-a7d3-84328ab95008
+		summarizeBy: sum
+		sourceColumn: etablissements_agriculture_50_salaries_ou_plus_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_industrie_sans_salarie_fin_2023
+		dataType: double
+		lineageTag: d5b8e213-3b0a-4d0d-8b59-685d76c332fb
+		summarizeBy: sum
+		sourceColumn: etablissements_industrie_sans_salarie_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_industrie_10_a_19_salaries_fin_2023
+		dataType: double
+		lineageTag: 68940b76-7b4c-4544-9ac6-967503183ad5
+		summarizeBy: sum
+		sourceColumn: etablissements_industrie_10_a_19_salaries_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_industrie_1_a_9_salaries_fin_2023
+		dataType: double
+		lineageTag: 002e34e4-7c73-4997-8fd3-bdc5db304a54
+		summarizeBy: sum
+		sourceColumn: etablissements_industrie_1_a_9_salaries_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_industrie_20_a_49_salaries_fin_2023
+		dataType: double
+		lineageTag: 251be610-3c3a-41ce-ac91-feb1e66c0b42
+		summarizeBy: sum
+		sourceColumn: etablissements_industrie_20_a_49_salaries_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_industrie_fin_2023
+		dataType: double
+		lineageTag: aa464df7-22c9-4d4f-a6b7-9e0432c2056f
+		summarizeBy: sum
+		sourceColumn: etablissements_industrie_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_industrie_50_salaries_ou_plus_fin_2023
+		dataType: double
+		lineageTag: ceefa60f-6a39-4648-a5a0-4cd39e9c42b9
+		summarizeBy: sum
+		sourceColumn: etablissements_industrie_50_salaries_ou_plus_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_construction_sans_salarie_fin_2023
+		dataType: double
+		lineageTag: 2b28c1fc-a6a0-44a7-9ef2-7d116f15041f
+		summarizeBy: sum
+		sourceColumn: etablissements_construction_sans_salarie_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_construction_10_a_19_salaries_fin_2023
+		dataType: double
+		lineageTag: ea34cfd4-f416-4c44-886e-251d2b418fda
+		summarizeBy: sum
+		sourceColumn: etablissements_construction_10_a_19_salaries_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_construction_1_a_9_salaries_fin_2023
+		dataType: double
+		lineageTag: 44897660-916a-45ec-83c7-53c25a5e6319
+		summarizeBy: sum
+		sourceColumn: etablissements_construction_1_a_9_salaries_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_construction_20_a_49_salaries_fin_2023
+		dataType: double
+		lineageTag: 6137f389-fba4-4b0b-a1f5-99c8070e78c4
+		summarizeBy: sum
+		sourceColumn: etablissements_construction_20_a_49_salaries_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_construction_fin_2023
+		dataType: double
+		lineageTag: ab1df643-0559-4701-997e-268355cadf4f
+		summarizeBy: sum
+		sourceColumn: etablissements_construction_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_construction_50_salaries_ou_fin_2023
+		dataType: double
+		lineageTag: 23989bf6-88b5-40d2-83bd-b69423966cee
+		summarizeBy: sum
+		sourceColumn: etablissements_construction_50_salaries_ou_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissem_commerce_et_services_marchands_sans_salarie_fin_2023
+		dataType: double
+		lineageTag: 4ee88264-13e5-4371-9491-bc8232251d01
+		summarizeBy: sum
+		sourceColumn: etablissem_commerce_et_services_marchands_sans_salarie_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablis_commerce_et_services_marchand_10_a_19_salaries_fin_2023
+		dataType: double
+		lineageTag: fd5f8b55-6631-4ceb-a9aa-51b6192a4faf
+		summarizeBy: sum
+		sourceColumn: etablis_commerce_et_services_marchand_10_a_19_salaries_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etabliss_commerce_et_services_marchands_1_a_9_salaries_fin_2023
+		dataType: double
+		lineageTag: fe27399f-4755-48f9-a462-50b6e0f5d510
+		summarizeBy: sum
+		sourceColumn: etabliss_commerce_et_services_marchands_1_a_9_salaries_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablis_commerce_et_services_marchand_20_a_49_salaries_fin_2023
+		dataType: double
+		lineageTag: b62166d2-a287-46b5-98c2-5a61750bd71c
+		summarizeBy: sum
+		sourceColumn: etablis_commerce_et_services_marchand_20_a_49_salaries_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_commerce_et_services_marchands_fin_2023
+		dataType: double
+		lineageTag: a903f2f6-b3e7-4941-9159-4e680e4ec9c9
+		summarizeBy: sum
+		sourceColumn: etablissements_commerce_et_services_marchands_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablis_commerc_et_service_marchan_50_salaries_ou_plus_fin_2023
+		dataType: double
+		lineageTag: 4f145067-307f-46f4-b907-60fe113e7282
+		summarizeBy: sum
+		sourceColumn: etablis_commerc_et_service_marchan_50_salaries_ou_plus_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ets_de_l_industrie_economiquement_actifs
+		dataType: double
+		lineageTag: c2313c23-6fe5-4a40-9e78-f9ffc009873f
+		summarizeBy: sum
+		sourceColumn: ets_de_l_industrie_economiquement_actifs
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ets_de_la_construction_economiquement_actifs
+		dataType: double
+		lineageTag: e05785ad-5073-4f12-955f-0af9edf325da
+		summarizeBy: sum
+		sourceColumn: ets_de_la_construction_economiquement_actifs
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ets_de_comm_transp_restau_heberg_economiquement_actifs
+		dataType: double
+		lineageTag: b0a763f6-cc9b-455d-a7b3-e2ddfdee955a
+		summarizeBy: sum
+		sourceColumn: ets_de_comm_transp_restau_heberg_economiquement_actifs
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ets_d_information_et_communication_economiquement_actifs
+		dataType: double
+		lineageTag: d59c31f0-cbfb-4865-bbbd-dd50c61527a4
+		summarizeBy: sum
+		sourceColumn: ets_d_information_et_communication_economiquement_actifs
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ets_d_activites_financieres_et_d_assurance_economiquemen_actifs
+		dataType: double
+		lineageTag: 9d8eafad-47f3-4bb3-9502-cadfc82d406a
+		summarizeBy: sum
+		sourceColumn: ets_d_activites_financieres_et_d_assurance_economiquemen_actifs
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ets_d_activites_immobilieres_economiquement_actifs
+		dataType: double
+		lineageTag: 19b8e05e-3108-442d-8ced-00fc3f5d58be
+		summarizeBy: sum
+		sourceColumn: ets_d_activites_immobilieres_economiquement_actifs
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ets_d_acti_spec_scie_et_tech_et_serv_adm_econ_acti
+		dataType: double
+		lineageTag: f7f8a4b1-3124-4486-a4e4-10844a144ecf
+		summarizeBy: sum
+		sourceColumn: ets_d_acti_spec_scie_et_tech_et_serv_adm_econ_acti
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ets_du_secte_adm_publ_ensei_sante_et_actio_social_econom_actifs
+		dataType: double
+		lineageTag: 9a4d9d73-ec52-4490-bab8-8fcfe5eec770
+		summarizeBy: sum
+		sourceColumn: ets_du_secte_adm_publ_ensei_sante_et_actio_social_econom_actifs
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etabli_sphere_produc_present_la_dernier_semaine_de_decembr_2023
+		dataType: double
+		lineageTag: 13fafcfe-d69a-49f4-8585-da9f05986df2
+		summarizeBy: sum
+		sourceColumn: etabli_sphere_produc_present_la_dernier_semaine_de_decembr_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etabl_spher_produ_public_presen_la_dernie_semain_de_decemb_2023
+		dataType: double
+		lineageTag: f0e828e3-cd4f-4917-b1ab-5ffb9efab86f
+		summarizeBy: sum
+		sourceColumn: etabl_spher_produ_public_presen_la_dernie_semain_de_decemb_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ets_des_autres_activites_de_services_economiquement_actifs
+		dataType: double
+		lineageTag: 193c2175-1056-46f8-97b5-1cbfeef6de0b
+		summarizeBy: sum
+		sourceColumn: ets_des_autres_activites_de_services_economiquement_actifs
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_economiquement_actifs
+		dataType: double
+		lineageTag: fb163c4b-b897-4387-8e07-77dd522e79bc
+		summarizeBy: sum
+		sourceColumn: etablissements_economiquement_actifs
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_services_non_marchands_sans_salarie_fin_2023
+		dataType: double
+		lineageTag: 9db46325-8bfa-479a-a8d8-0abccae2a786
+		summarizeBy: sum
+		sourceColumn: etablissements_services_non_marchands_sans_salarie_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_services_non_marchands_10_a_19_salaries_fin_2023
+		dataType: double
+		lineageTag: f873f1a8-057a-4a65-8cc2-956831544b3c
+		summarizeBy: sum
+		sourceColumn: etablissements_services_non_marchands_10_a_19_salaries_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_services_non_marchands_1_a_9_salaries_fin_2023
+		dataType: double
+		lineageTag: 65b718fa-137e-45a2-a96c-08777300d97d
+		summarizeBy: sum
+		sourceColumn: etablissements_services_non_marchands_1_a_9_salaries_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_services_non_marchands_20_a_49_salaries_fin_2023
+		dataType: double
+		lineageTag: e349eb37-fc10-4bbc-b1a1-bfa2ed8ddfa1
+		summarizeBy: sum
+		sourceColumn: etablissements_services_non_marchands_20_a_49_salaries_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_services_non_marchands_fin_2023
+		dataType: double
+		lineageTag: a0487cb9-934e-4442-8f22-3be1d278dff3
+		summarizeBy: sum
+		sourceColumn: etablissements_services_non_marchands_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablisseme_services_non_marchands_50_salaries_ou_plus_fin_2023
+		dataType: double
+		lineageTag: 21d7e918-5529-4e31-b5c3-752903f4eae7
+		summarizeBy: sum
+		sourceColumn: etablisseme_services_non_marchands_50_salaries_ou_plus_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_agri_10_a_19_sala_dern_sema_dec
+		dataType: double
+		lineageTag: 1a5fb908-22c8-4c48-a99b-b3824047b198
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_agri_10_a_19_sala_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_agri_1_a_9_sala_dern_sema_dec
+		dataType: double
+		lineageTag: e9ef4c5c-178e-44e9-be7b-e87a5670d8ec
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_agri_1_a_9_sala_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_agri_20_a_49_sala_dern_sema_dec
+		dataType: double
+		lineageTag: 3399e1ad-4e12-4036-839c-9ed8052b4448
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_agri_20_a_49_sala_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effec_salar_des_etabl_agric_prese_la_derni_semai_de_decemb_2023
+		dataType: double
+		lineageTag: 3f324b73-49d1-4d57-a6ca-9b016d3b944b
+		summarizeBy: sum
+		sourceColumn: effec_salar_des_etabl_agric_prese_la_derni_semai_de_decemb_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_agri_50_a_99_sala_dern_sema_dec
+		dataType: double
+		lineageTag: 5866afc8-a935-41af-9b6b-85de9cdd8630
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_agri_50_a_99_sala_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_agri_100_sala_ou_dern_sema_dec
+		dataType: double
+		lineageTag: d2bed094-d65b-4d9b-97f8-7c18e06f23f5
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_agri_100_sala_ou_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_indu_10_a_19_sala_dern_sema_dec
+		dataType: double
+		lineageTag: 586ca3dc-fa54-418a-ab04-7d5ea30498a2
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_indu_10_a_19_sala_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_indu_1_a_9_sala_dern_sema_dec
+		dataType: double
+		lineageTag: 1cd05167-b802-4268-9a0f-c0ccf549bee3
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_indu_1_a_9_sala_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_indu_20_a_49_sala_dern_sema_dec
+		dataType: double
+		lineageTag: a75e048f-b29b-4e5c-9951-d907d4c434bf
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_indu_20_a_49_sala_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_de_l_indu_prese_la_derni_semai_de_decem_2023
+		dataType: double
+		lineageTag: 95eae9b2-01e8-430e-a56b-4bd8dc08103c
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_de_l_indu_prese_la_derni_semai_de_decem_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_indu_50_a_99_sala_dern_sema_dec
+		dataType: double
+		lineageTag: 5da2120a-99ff-4d3d-9c08-3d3cfa9b661e
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_indu_50_a_99_sala_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_indu_100_sala_ou_dern_sema_dec
+		dataType: double
+		lineageTag: 0edf76fe-6e10-4cbf-b642-cf92d1f0182e
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_indu_100_sala_ou_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_cons_10_a_19_sala_dern_sema_dec
+		dataType: double
+		lineageTag: 18f77ebc-3774-4481-8601-cb59f0daa184
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_cons_10_a_19_sala_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_cons_1_a_9_sala_dern_sema_dec
+		dataType: double
+		lineageTag: 217a4937-fc2c-4180-bc40-8a8c21c8ddd6
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_cons_1_a_9_sala_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_cons_20_a_49_sala_dern_sema_dec
+		dataType: double
+		lineageTag: ce9c4e48-1e26-4dba-ac3a-8f2af273357d
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_cons_20_a_49_sala_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_de_la_cons_pres_la_derni_semai_de_decem_2023
+		dataType: double
+		lineageTag: 2381daa9-97ae-4a87-9d30-c495c8ee4260
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_de_la_cons_pres_la_derni_semai_de_decem_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_cons_50_a_99_sala_dern_sema_dec
+		dataType: double
+		lineageTag: 67a59bbc-26b8-4a21-b438-f9b88696c012
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_cons_50_a_99_sala_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_cons_100_sala_ou_dern_sema_dec
+		dataType: double
+		lineageTag: 6c751b3f-8f97-4014-a03f-b667213fdf5e
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_cons_100_sala_ou_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_comm_et_serv_marc_10_a_19_sala_dern_sema_dec
+		dataType: double
+		lineageTag: 2e48ef56-c55e-43ab-8031-cd20afc68067
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_comm_et_serv_marc_10_a_19_sala_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_comm_et_serv_marc_1_a_9_sala_dern_sema_dec
+		dataType: double
+		lineageTag: 16e2880e-ca6b-4333-8a6e-dc955fb33adc
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_comm_et_serv_marc_1_a_9_sala_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_comm_et_serv_marc_20_a_49_sala_dern_sema_dec
+		dataType: double
+		lineageTag: 215e44e0-a302-4b1e-a168-a8f449b6bb46
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_comm_et_serv_marc_20_a_49_sala_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_du_comm_et_serv_marc_dern_sema_dec
+		dataType: double
+		lineageTag: 4e7e4497-b1da-4693-9d8f-1d4530e94d62
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_du_comm_et_serv_marc_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_comm_et_serv_marc_50_a_99_sala_dern_sema_dec
+		dataType: double
+		lineageTag: 8fa57229-6814-445a-9b2d-b71f144c33f5
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_comm_et_serv_marc_50_a_99_sala_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_comm_et_serv_marc_100_sala_ou_dern_sema_dec
+		dataType: double
+		lineageTag: b6f1af2b-f559-4fdb-96c5-fb663c8af922
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_comm_et_serv_marc_100_sala_ou_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_sphe_prod_prese_la_derni_semai_de_decem_2023
+		dataType: double
+		lineageTag: 45fc6f18-1a1a-4878-ac0a-5d8b62b5a387
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_sphe_prod_prese_la_derni_semai_de_decem_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_sphe_prod_publ_dern_sema_dec
+		dataType: double
+		lineageTag: f2d18d7e-1efd-4d73-8d18-94a7c8ff3652
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_sphe_prod_publ_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_serv_non_marc_10_a_19_sala_dern_sema_dec
+		dataType: double
+		lineageTag: 8476ca7a-4b1c-47cc-a7fb-c7cb6bfe93f3
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_serv_non_marc_10_a_19_sala_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_serv_non_marc_1_a_9_sala_dern_sema_dec
+		dataType: double
+		lineageTag: 1e2ffa7f-907d-4d4f-bd17-5fcce919c68a
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_serv_non_marc_1_a_9_sala_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_serv_non_marc_20_a_49_sala_dern_sema_dec
+		dataType: double
+		lineageTag: a29d0183-ba5f-410a-8c18-34f69cbc0b38
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_serv_non_marc_20_a_49_sala_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_serv_non_marc_pres_la_dern_sema_de_dece_2023
+		dataType: double
+		lineageTag: 6af9351e-27c1-482b-bc4d-d6b5239e89e2
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_serv_non_marc_pres_la_dern_sema_de_dece_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_serv_non_marc_50_a_99_sala_dern_sema_dec
+		dataType: double
+		lineageTag: d9dd1fb6-205a-41ea-b5b8-e60c5124fb8a
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_serv_non_marc_50_a_99_sala_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_serv_non_marc_100_sala_ou_dern_sema_dec
+		dataType: double
+		lineageTag: 461d6bbd-fda0-402a-88b6-b85cf2f8098d
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_serv_non_marc_100_sala_ou_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_sphe_pres_prese_la_derni_semai_de_decem_2023
+		dataType: double
+		lineageTag: e856fafd-7e2f-43c9-a01d-ca9eb98d0f53
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_sphe_pres_prese_la_derni_semai_de_decem_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_sphe_pres_publ_dern_sema_dec
+		dataType: double
+		lineageTag: e767d7b8-ed63-46cd-9840-85528ff7ff37
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_sphe_pres_publ_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etabli_sphere_presen_present_la_dernier_semaine_de_decembr_2023
+		dataType: double
+		lineageTag: ecf54544-8a3e-4cdb-9708-364719884753
+		summarizeBy: sum
+		sourceColumn: etabli_sphere_presen_present_la_dernier_semaine_de_decembr_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etabl_spher_prese_public_presen_la_dernie_semain_de_decemb_2023
+		dataType: double
+		lineageTag: 393c38c3-ac9c-437d-9fac-43081fcde0b7
+		summarizeBy: sum
+		sourceColumn: etabl_spher_prese_public_presen_la_dernie_semain_de_decemb_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_de_10_a_19_sala_dern_sema_dec
+		dataType: double
+		lineageTag: 43b5a9ef-a5ea-4835-b374-685f99ee4893
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_de_10_a_19_sala_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_de_1_a_9_sala_pres_la_dern_sema_de_dece_2023
+		dataType: double
+		lineageTag: 1ce18bbd-08de-4242-9840-a8637e1c89e7
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_de_1_a_9_sala_pres_la_dern_sema_de_dece_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_de_20_a_49_sala_dern_sema_dec
+		dataType: double
+		lineageTag: fbd37fae-110b-4400-ba4d-a634f87e0f63
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_de_20_a_49_sala_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_de_50_a_99_sala_dern_sema_dec
+		dataType: double
+		lineageTag: 724fd65b-1cb0-45dc-a2ca-2a1f781ed161
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_de_50_a_99_sala_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effe_sala_des_etab_de_100_sala_ou_plus_dern_sema_dec
+		dataType: double
+		lineageTag: 0266192f-5d11-4eaa-a821-dc5baf493f4c
+		summarizeBy: sum
+		sourceColumn: effe_sala_des_etab_de_100_sala_ou_plus_dern_sema_dec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column effect_salari_des_etabli_presen_la_dernie_semain_de_decemb_2023
+		dataType: double
+		lineageTag: 17d1e6b9-cb4e-4847-a4ec-d4858c967cea
+		summarizeBy: sum
+		sourceColumn: effect_salari_des_etabli_presen_la_dernie_semain_de_decemb_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_sans_salarie_fin_2023
+		dataType: double
+		lineageTag: eb7ad10c-419a-4152-9aec-c70f7cc65202
+		summarizeBy: sum
+		sourceColumn: etablissements_sans_salarie_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_de_10_a_19_salaries_fin_2023
+		dataType: double
+		lineageTag: aa1173cc-f3f9-4b0c-8474-73527b9bf101
+		summarizeBy: sum
+		sourceColumn: etablissements_de_10_a_19_salaries_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_de_1_a_9_salaries_fin_2023
+		dataType: double
+		lineageTag: 46c7f128-d84b-438a-82fa-01f4098feda6
+		summarizeBy: sum
+		sourceColumn: etablissements_de_1_a_9_salaries_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_de_20_a_49_salaries_fin_2023
+		dataType: double
+		lineageTag: ef76e480-7894-40a5-98a4-7e5c6b684eb5
+		summarizeBy: sum
+		sourceColumn: etablissements_de_20_a_49_salaries_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column etablissements_de_50_salaries_ou_plus_fin_2023
+		dataType: double
+		lineageTag: a0139b5f-50ca-4770-8b25-c447656dde67
+		summarizeBy: sum
+		sourceColumn: etablissements_de_50_salaries_ou_plus_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column total_ets_fin_2023
+		dataType: double
+		lineageTag: e20ca7ce-37c0-4143-bd51-8cd3274c92b2
+		summarizeBy: sum
+		sourceColumn: total_ets_fin_2023
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column geo_sk
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 64d8b215-47cb-40f7-a64f-3806291f7750
+		summarizeBy: none
+		sourceColumn: geo_sk
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public fact_insee_employment' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("aws-1-eu-west-3.pooler.supabase.com", "postgres"),
+				    public_fact_insee_employment = Source{[Schema="public",Item="fact_insee_employment"]}[Data],
+				    #"Colonnes supprimées" = Table.RemoveColumns(public_fact_insee_employment,{"fact_employment_id"})
+				in
+				    #"Colonnes supprimées"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

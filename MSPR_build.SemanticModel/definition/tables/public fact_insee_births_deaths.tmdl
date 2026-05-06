@@ -1,0 +1,58 @@
+table 'public fact_insee_births_deaths'
+	lineageTag: 9fa797af-9162-42e1-9067-b5f934cb8b4a
+
+	column annee
+		dataType: int64
+		formatString: 0
+		lineageTag: 5bd8633a-4135-49ef-ae1d-0c7a2d64b91c
+		summarizeBy: none
+		sourceColumn: annee
+
+		annotation SummarizationSetBy = User
+
+	column deces_domicilies
+		dataType: double
+		lineageTag: fc435750-8bc1-4d39-b7d1-bec4c218ede8
+		summarizeBy: sum
+		sourceColumn: deces_domicilies
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column naissances_domiciliees
+		dataType: double
+		lineageTag: caef860d-690b-4228-8c7a-73ce127f7c0c
+		summarizeBy: sum
+		sourceColumn: naissances_domiciliees
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column geo_sk
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: cf55b813-97c8-4667-a3a7-439ff3bb4da4
+		summarizeBy: none
+		sourceColumn: geo_sk
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public fact_insee_births_deaths' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("aws-1-eu-west-3.pooler.supabase.com", "postgres"),
+				    public_fact_insee_births_deaths = Source{[Schema="public",Item="fact_insee_births_deaths"]}[Data],
+				    #"Colonnes supprimées" = Table.RemoveColumns(public_fact_insee_births_deaths,{"fact_births_deaths_id"})
+				in
+				    #"Colonnes supprimées"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
