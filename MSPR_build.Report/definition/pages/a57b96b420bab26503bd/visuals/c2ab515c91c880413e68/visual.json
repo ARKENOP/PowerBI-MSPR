@@ -20,7 +20,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "public dim_geographie"
+                      "Entity": "geographie"
                     }
                   },
                   "Property": "code_commune"
@@ -35,7 +35,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "public dim_election"
+                      "Entity": "election"
                     }
                   },
                   "Property": "annee_election"
@@ -50,7 +50,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "public dim_election"
+                      "Entity": "election"
                     }
                   },
                   "Property": "tour"
@@ -67,7 +67,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "public fact_participation"
+                          "Entity": "participation"
                         }
                       },
                       "Property": "inscrits"
@@ -87,7 +87,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "public fact_participation"
+                          "Entity": "participation"
                         }
                       },
                       "Property": "votants"
@@ -102,10 +102,30 @@
             },
             {
               "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "participation"
+                        }
+                      },
+                      "Property": "exprimes"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(participation.exprimes)",
+              "nativeQueryRef": "Exprimés",
+              "displayName": "Exprimés"
+            },
+            {
+              "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "public dim_candidat_liste"
+                      "Entity": "candidat_liste"
                     }
                   },
                   "Property": "code_nuance"
@@ -122,7 +142,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "public fact_resultats_liste"
+                          "Entity": "resultats_liste"
                         }
                       },
                       "Property": "voix"
@@ -134,6 +154,76 @@
               "queryRef": "Sum(public fact_resultats_liste.voix)",
               "nativeQueryRef": "Voix",
               "displayName": "Voix"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "resultats_liste"
+                    }
+                  },
+                  "Property": "Voix (% des votants)"
+                }
+              },
+              "queryRef": "resultats_liste.% des suffrages exprimés",
+              "nativeQueryRef": "Voix (% des votants)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "resultats_liste"
+                    }
+                  },
+                  "Property": "Voix (% des exprimés)"
+                }
+              },
+              "queryRef": "resultats_liste.% des exprimés",
+              "nativeQueryRef": "Voix (% des exprimés)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "resultats_liste"
+                    }
+                  },
+                  "Property": "Gagnant T1"
+                }
+              },
+              "queryRef": "resultats_liste.Test1",
+              "nativeQueryRef": "Gagnant T1"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "resultats_liste"
+                    }
+                  },
+                  "Property": "Gagnant T2"
+                }
+              },
+              "queryRef": "resultats_liste.Gagnant T2",
+              "nativeQueryRef": "Gagnant T2"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "resultats_liste"
+                    }
+                  },
+                  "Property": "Mesure1"
+                }
+              },
+              "queryRef": "resultats_liste.Mesure1",
+              "nativeQueryRef": "Mesure1"
             }
           ]
         }
@@ -145,7 +235,7 @@
               "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "public dim_geographie"
+                    "Entity": "geographie"
                   }
                 },
                 "Property": "code_commune"
@@ -213,9 +303,257 @@
           "selector": {
             "metadata": "public dim_election.tour"
           }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "88.34614711439171D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(participation.exprimes)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "53.7755589695589D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "public dim_election.annee_election"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "86.26419490555384D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(public fact_resultats_liste.voix)"
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
         }
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "9d77a6d9ad51df349f3a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "geographie"
+              }
+            },
+            "Property": "code_commune"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "8b7a4b370cd3b7aec694",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "election"
+              }
+            },
+            "Property": "annee_election"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "7ddafc0a51b15ad6f4d4",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "election"
+              }
+            },
+            "Property": "tour"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "5baf781c39243d106edd",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "participation"
+                  }
+                },
+                "Property": "inscrits"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "307eb51c70cf716c6946",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "participation"
+                  }
+                },
+                "Property": "votants"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "2de84d1e06949583f9df",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "candidat_liste"
+              }
+            },
+            "Property": "code_nuance"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "f1ee48cff045ca652fa1",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "resultats_liste"
+                  }
+                },
+                "Property": "voix"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "89148afad405b0695ddb",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "resultats_liste"
+              }
+            },
+            "Property": "Voix (% des votants)"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "a702813fe3bb559c7def",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "participation"
+                  }
+                },
+                "Property": "exprimes"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "742248bb92c18bb6f018",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "resultats_liste"
+              }
+            },
+            "Property": "Voix (% des exprimés)"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "6d80e7e410929f66172f",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "resultats_liste"
+              }
+            },
+            "Property": "Gagnant T1"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

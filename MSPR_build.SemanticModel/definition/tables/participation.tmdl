@@ -1,5 +1,13 @@
-table 'public fact_participation'
+table participation
 	lineageTag: f181d6b4-0d9f-4c71-a96d-65596ef3dee0
+
+	measure 'Abstentions (%)' = DIVIDE(SUM('participation'[abstentions]), SUM('participation'[inscrits]), 0)
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 4498d709-fc09-403c-a742-bf24b9935107
+
+	measure 'Blancs & Nuls (%)' = DIVIDE(SUM('participation'[blancs_nuls]), SUM('participation'[votants]), 0)
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: f5fa2650-5886-4154-a0fa-029e6b7c7101
 
 	column election_sk
 		dataType: int64
@@ -70,7 +78,7 @@ table 'public fact_participation'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'public fact_participation' = m
+	partition participation = m
 		mode: import
 		source =
 				let

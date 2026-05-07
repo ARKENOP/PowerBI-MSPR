@@ -1,0 +1,68 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "a81be043a9677a1ebc04",
+  "position": {
+    "x": 815.65026480500717,
+    "y": 140.41174771304767,
+    "z": 3,
+    "height": 113.5915262397689,
+    "width": 187.74155031295138,
+    "tabOrder": 3
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "participation"
+                        }
+                      },
+                      "Property": "votants"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(participation.votants)",
+              "nativeQueryRef": "Votes décomptés",
+              "displayName": "Votes décomptés",
+              "format": "0.00"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "participation"
+                      }
+                    },
+                    "Property": "votants"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

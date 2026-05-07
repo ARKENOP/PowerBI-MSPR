@@ -1,4 +1,4 @@
-table 'public fact_insee_creation_entreprises'
+table insee_creation_entreprises
 	lineageTag: a267ccfb-a5e1-442d-922d-beb501e485c2
 
 	column annee
@@ -222,7 +222,7 @@ table 'public fact_insee_creation_entreprises'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'public fact_insee_creation_entreprises' = m
+	partition insee_creation_entreprises = m
 		mode: import
 		source =
 				let

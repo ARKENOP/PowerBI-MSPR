@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "56cca9c102b61323c6bd",
   "position": {
-    "x": 1014.4081167988177,
+    "x": 1014.5172917321306,
     "y": 0,
     "z": 1000,
-    "height": 719.90253450238674,
-    "width": 265.05502406678784,
+    "height": 420.94896582318256,
+    "width": 264.9858597807804,
     "tabOrder": 1000
   },
   "visual": {
@@ -20,7 +20,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "public dim_geographie"
+                      "Entity": "geographie"
                     }
                   },
                   "Property": "libelle_departement"
@@ -83,7 +83,7 @@
             "maxTiles": {
               "expr": {
                 "Literal": {
-                  "Value": "26L"
+                  "Value": "13L"
                 }
               }
             }
@@ -92,20 +92,54 @@
       ],
       "general": [
         {
-          "properties": {}
+          "properties": {
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "g",
+                    "Entity": "geographie",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "g"
+                                }
+                              },
+                              "Property": "libelle_departement"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'AIN'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
         }
       ],
       "data": [
         {
-          "properties": {
-            "isInvertedSelectionMode": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
+          "properties": {}
         }
       ]
     },

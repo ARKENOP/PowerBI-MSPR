@@ -1,0 +1,108 @@
+table nuances_partis
+	lineageTag: 9ffa68ab-bc13-494d-bef2-62fa85674f33
+
+	column code_nuance
+		dataType: string
+		lineageTag: c343059a-1d3c-4fa4-b846-658d378dcc1c
+		summarizeBy: none
+		sourceColumn: code_nuance
+
+		annotation SummarizationSetBy = Automatic
+
+	column libelle_officiel
+		dataType: string
+		lineageTag: c44a942a-d016-4d20-995c-5420b629682e
+		summarizeBy: none
+		sourceColumn: libelle_officiel
+
+		annotation SummarizationSetBy = Automatic
+
+	column bloc_ministere
+		dataType: string
+		lineageTag: dd855552-e958-4b0e-b3ba-f6abd3e7bbaf
+		summarizeBy: none
+		sourceColumn: bloc_ministere
+
+		annotation SummarizationSetBy = Automatic
+
+	column bloc_analytique
+		dataType: string
+		lineageTag: ecbec01c-752e-4070-8c86-d522ab49eb47
+		summarizeBy: none
+		sourceColumn: bloc_analytique
+
+		annotation SummarizationSetBy = Automatic
+
+	column parti_sensibilite
+		dataType: string
+		lineageTag: 1c5ee501-9897-48fb-8b0f-22bab73638c8
+		summarizeBy: none
+		sourceColumn: parti_sensibilite
+
+		annotation SummarizationSetBy = Automatic
+
+	column notes
+		dataType: string
+		lineageTag: 2018a15e-80b8-4c06-845f-6a6058788518
+		summarizeBy: none
+		sourceColumn: notes
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Bloc Analytique'
+		dataType: string
+		lineageTag: 767ab15e-6e52-4dc6-b629-faa3f492539d
+		summarizeBy: none
+		sourceColumn: Bloc Analytique
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Bloc Ministère'
+		dataType: string
+		lineageTag: 1b935998-2d55-4118-ad2b-38c82e24bfa0
+		summarizeBy: none
+		sourceColumn: Bloc Ministère
+
+		annotation SummarizationSetBy = Automatic
+
+	partition nuances_partis = m
+		mode: import
+		source = ```
+				let
+				    Source = PostgreSQL.Database("aws-1-eu-west-3.pooler.supabase.com", "postgres"),
+				    public_dim_nuances_partis = Source{[Schema="public",Item="dim_nuances_partis"]}[Data],
+				    #"Personnalisée ajoutée" = Table.AddColumn(public_dim_nuances_partis, "Bloc Analytique", each 
+				let
+				    txt = [bloc_analytique]
+				in
+				    if Text.Contains(txt, "_") then
+				        let
+				            parts = Text.Split(txt, "_")
+				        in
+				            Text.Proper(parts{0}) & " " & Text.Lower(parts{1})
+				    else
+				        Text.Proper(Text.Lower(txt))
+				),
+				    #"Personnalisée ajoutée1" = Table.AddColumn(#"Personnalisée ajoutée", "Bloc Ministère", each let
+				    sw = [
+				        AUT = "Autre",
+				        CENT = "Centre",
+				        DTE = "Droite",
+				        EXG = "Extrême gauche",
+				        EXD = "Extrême droite",
+				        GCHE = "Gauche",
+				        NC = "Non communiqué"
+				    ]
+				in
+				    if [bloc_ministere] = null then
+				        null
+				    else
+				        Record.FieldOrDefault(sw, [bloc_ministere], [bloc_ministere]))
+				in
+				    #"Personnalisée ajoutée1"
+				```
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

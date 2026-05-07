@@ -1,4 +1,4 @@
-table 'public dim_geographie'
+table geographie
 	lineageTag: eb60f0f9-7c4f-44b7-be92-914b9ba6ac07
 
 	column geo_sk
@@ -16,10 +16,10 @@ table 'public dim_geographie'
 	column code_commune
 		dataType: string
 		lineageTag: ac34a72a-2092-427f-aa31-394f5c60813d
-		summarizeBy: none
+		summarizeBy: distinctCount
 		sourceColumn: code_commune
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column code_departement
 		dataType: string
@@ -47,7 +47,7 @@ table 'public dim_geographie'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'public dim_geographie' = m
+	partition geographie = m
 		mode: import
 		source =
 				let

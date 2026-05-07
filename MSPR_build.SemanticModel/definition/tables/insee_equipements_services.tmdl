@@ -1,4 +1,4 @@
-table 'public fact_insee_equipements_services'
+table insee_equipements_services
 	lineageTag: 09555362-3dfa-46c5-a2ac-5cf6ce2b92d7
 
 	column annee
@@ -262,7 +262,7 @@ table 'public fact_insee_equipements_services'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'public fact_insee_equipements_services' = m
+	partition insee_equipements_services = m
 		mode: import
 		source =
 				let

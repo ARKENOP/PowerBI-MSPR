@@ -1,4 +1,4 @@
-table 'public fact_insee_fiscal'
+table insee_fiscal
 	lineageTag: 2022d6cf-1ed6-4616-b343-d5a196e08960
 
 	column annee
@@ -592,7 +592,7 @@ table 'public fact_insee_fiscal'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'public fact_insee_fiscal' = m
+	partition insee_fiscal = m
 		mode: import
 		source =
 				let

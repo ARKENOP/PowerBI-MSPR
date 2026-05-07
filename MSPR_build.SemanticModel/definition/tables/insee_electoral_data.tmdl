@@ -1,4 +1,4 @@
-table 'public fact_insee_electoral_data'
+table insee_electoral_data
 	lineageTag: 8fbb2680-6e1f-4fe4-aa12-f6f3e4182626
 
 	column annee
@@ -32,7 +32,7 @@ table 'public fact_insee_electoral_data'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'public fact_insee_electoral_data' = m
+	partition insee_electoral_data = m
 		mode: import
 		source =
 				let

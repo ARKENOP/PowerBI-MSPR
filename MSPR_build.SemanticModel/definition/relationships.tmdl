@@ -1,82 +1,82 @@
 relationship 1b2a21a0-2c70-4f65-98e3-22d6287bdcf7
-	fromColumn: 'public fact_insee_composition'.geo_sk
-	toColumn: 'public dim_geographie'.geo_sk
+	fromColumn: insee_composition.geo_sk
+	toColumn: geographie.geo_sk
 
 	annotation PBI_IsFromSource = FS
 
 relationship 0b83a1f3-34ff-4f99-b853-f260f5a78abc
-	fromColumn: 'public fact_insee_creation_entreprises'.geo_sk
-	toColumn: 'public dim_geographie'.geo_sk
+	fromColumn: insee_creation_entreprises.geo_sk
+	toColumn: geographie.geo_sk
 
 	annotation PBI_IsFromSource = FS
 
 relationship 54dd016a-b7a9-4956-bc36-04a9e82e3deb
-	fromColumn: 'public fact_insee_creation_histo'.geo_sk
-	toColumn: 'public dim_geographie'.geo_sk
+	fromColumn: insee_creation_histo.geo_sk
+	toColumn: geographie.geo_sk
 
 	annotation PBI_IsFromSource = FS
 
 relationship eaf275b6-3eb6-4a08-a42a-0269f6dc40da
-	fromColumn: 'public fact_insee_electoral_data'.geo_sk
-	toColumn: 'public dim_geographie'.geo_sk
+	fromColumn: insee_electoral_data.geo_sk
+	toColumn: geographie.geo_sk
 
 	annotation PBI_IsFromSource = FS
 
 relationship 3fb0d0ac-0c10-4bb6-b231-5553523e1a39
-	fromColumn: 'public fact_insee_employment'.geo_sk
-	toColumn: 'public dim_geographie'.geo_sk
+	fromColumn: insee_employment.geo_sk
+	toColumn: geographie.geo_sk
 
 	annotation PBI_IsFromSource = FS
 
 relationship 4bc3b913-5a22-425a-8544-f115b0013be8
-	fromColumn: 'public fact_insee_equipements_services'.geo_sk
-	toColumn: 'public dim_geographie'.geo_sk
+	fromColumn: insee_equipements_services.geo_sk
+	toColumn: geographie.geo_sk
 
 	annotation PBI_IsFromSource = FS
 
 relationship 94d18b16-1786-4d1a-ba1c-af6f02288cca
-	fromColumn: 'public fact_insee_fiscal'.geo_sk
-	toColumn: 'public dim_geographie'.geo_sk
+	fromColumn: insee_fiscal.geo_sk
+	toColumn: geographie.geo_sk
 
 	annotation PBI_IsFromSource = FS
 
 relationship f5f736eb-0a35-4206-8c57-7db4cf8c7179
-	fromColumn: 'public fact_insee_historical_demography'.geo_sk
-	toColumn: 'public dim_geographie'.geo_sk
+	fromColumn: insee_historical_demography.geo_sk
+	toColumn: geographie.geo_sk
 
 	annotation PBI_IsFromSource = FS
 
 relationship c2b769e6-8887-4131-83cb-a0075baa359a
-	fromColumn: 'public fact_insee_population'.geo_sk
-	toColumn: 'public dim_geographie'.geo_sk
+	fromColumn: insee_population.geo_sk
+	toColumn: geographie.geo_sk
 
 	annotation PBI_IsFromSource = FS
 
 relationship bd1e8497-34ee-bdb3-2fc7-f6a0d2bacf19
-	fromColumn: 'public fact_insee_births_deaths'.geo_sk
-	toColumn: 'public dim_geographie'.geo_sk
+	fromColumn: insee_births_deaths.geo_sk
+	toColumn: geographie.geo_sk
 
 relationship 93484135-d101-42b4-c361-49dd86d63f02
-	fromColumn: 'public fact_resultats_liste'.geo_sk
-	toColumn: 'public dim_geographie'.geo_sk
+	fromColumn: resultats_liste.geo_sk
+	toColumn: geographie.geo_sk
 
 relationship e3ff3ba8-8afc-87bb-20ce-68b35bf95d2e
-	fromColumn: 'public fact_resultats_liste'.election_sk
-	toColumn: 'public dim_election'.election_sk
+	fromColumn: resultats_liste.election_sk
+	toColumn: election.election_sk
 
 relationship 21e2e944-a365-dc73-1ea1-94db7e8ae076
-	fromColumn: 'public fact_resultats_liste'.candidat_sk
-	toColumn: 'public dim_candidat_liste'.candidat_sk
+	fromColumn: resultats_liste.candidat_sk
+	toColumn: candidat_liste.candidat_sk
 
 relationship b7549adf-5c1c-704a-5217-2c154d2eef84
-	fromColumn: 'public fact_participation'.geo_sk
-	toColumn: 'public dim_geographie'.geo_sk
+	fromColumn: participation.geo_sk
+	toColumn: geographie.geo_sk
 
 relationship c241657e-3311-10e4-6cf7-0852277907b7
-	fromColumn: 'public fact_participation'.election_sk
-	toColumn: 'public dim_election'.election_sk
+	fromColumn: participation.election_sk
+	toColumn: election.election_sk
 
 relationship 35f32940-8eb9-adcd-ef89-ab13ff9e550f
-	fromColumn: 'public dim_candidat_liste'.code_nuance
-	toColumn: 'public dim_nuances_partis'.code_nuance
+	fromColumn: candidat_liste.code_nuance
+	toColumn: nuances_partis.code_nuance
 

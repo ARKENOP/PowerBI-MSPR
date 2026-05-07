@@ -1,4 +1,4 @@
-table 'public fact_insee_creation_histo'
+table insee_creation_histo
 	lineageTag: 3a8f49cc-6bcd-4082-b7f2-08660285b4e2
 
 	column annee
@@ -142,7 +142,7 @@ table 'public fact_insee_creation_histo'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'public fact_insee_creation_histo' = m
+	partition insee_creation_histo = m
 		mode: import
 		source =
 				let

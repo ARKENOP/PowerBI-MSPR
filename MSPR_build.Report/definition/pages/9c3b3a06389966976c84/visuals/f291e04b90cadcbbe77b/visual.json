@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "f291e04b90cadcbbe77b",
   "position": {
-    "x": 9.8168527432143655,
-    "y": 0,
+    "x": 9.4659605199807419,
+    "y": 17.354260953298027,
     "z": 0,
-    "height": 719.90253450238674,
-    "width": 780.439793085542,
+    "height": 691.01511795859415,
+    "width": 780.94174289841112,
     "tabOrder": 0
   },
   "visual": {
@@ -20,7 +20,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "public dim_geographie"
+                      "Entity": "geographie"
                     }
                   },
                   "Property": "code_departement"
@@ -39,7 +39,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "public dim_geographie"
+                      "Entity": "geographie"
                     }
                   },
                   "Property": "libelle_departement"
@@ -190,6 +190,19 @@
               "expr": {
                 "Literal": {
                   "Value": "'Canvas'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Départements français'"
                 }
               }
             }

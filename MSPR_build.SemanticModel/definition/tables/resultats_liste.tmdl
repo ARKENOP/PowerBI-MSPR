@@ -1,0 +1,123 @@
+table resultats_liste
+	lineageTag: 2b6f5207-373d-498c-8d60-14fe2d3aed9a
+
+	measure 'Voix (% des votants)' =
+			
+			VAR TotalVoix = SUM('resultats_liste'[voix])
+			VAR TotalVotants = SUM('participation'[votants])
+			
+			RETURN
+			DIVIDE(TotalVoix, TotalVotants, 0)
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 8cd3f345-fc80-47f2-b56c-ae488657fa24
+
+	measure 'Voix (% des exprimés)' = ```
+			
+			VAR TotalVoix = SUM('resultats_liste'[voix])
+			VAR TotalVotants = SUM('participation'[exprimes])
+			
+			RETURN
+			DIVIDE(TotalVoix, TotalVotants, 0) 
+			```
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 49331769-7b7a-46cf-bddb-807ea6a6b354
+
+	measure 'Gagnant T1' =
+			IF( ISBLANK([Voix (% des votants)]), BLANK(),
+			     IF(
+			        [Tour atteint par la liste]=1 && [Voix (% des votants)]>=0.5,
+			        1,
+			        BLANK()
+			    )
+			)
+		formatString: 0
+		lineageTag: 375e79e8-5740-4a42-8d96-5ae2a95be8f0
+
+	measure 'Gagnant T2' = BLANK()
+		formatString: 0
+		lineageTag: d7f273d2-86a9-4229-846f-8a2c5ee8ac54
+
+	measure Mesure1 = BLANK()
+		formatString: 0
+		lineageTag: abe7a6c1-f4ad-4e8c-95ca-6d78dfb3c001
+
+	measure 'Tour atteint par la liste' =
+			
+			VAR TableVilleAnnee =
+			    FILTER(
+			        ALL('election'),
+			        'election'[annee_election] = SELECTEDVALUE('election'[annee_election])
+			            && CALCULATE(
+			                NOT ISBLANK([Voix (% des votants)])
+			            )
+			    )
+			RETURN
+			    IF( ISBLANK(resultats_liste[Voix (% des votants)]), BLANK(),
+			        MAXX(
+			            TableVilleAnnee,
+			            'election'[tour]
+			        )
+			    )
+		formatString: 0
+		lineageTag: 08bfd259-a8cb-4d3f-94bc-e374774e54ae
+
+	column election_sk
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 98f5b5c1-6c5e-4751-b8fd-c5051656889e
+		summarizeBy: none
+		sourceColumn: election_sk
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column geo_sk
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 25c05ce1-eb8c-46cf-80fc-820b0ee03c7b
+		summarizeBy: none
+		sourceColumn: geo_sk
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column candidat_sk
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: c4b090bd-ad62-48c1-a011-2e6bf78fef58
+		summarizeBy: none
+		sourceColumn: candidat_sk
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column voix
+		dataType: int64
+		formatString: 0
+		lineageTag: c8ccdc06-b1a0-4e97-bd96-9cab5afc8f55
+		summarizeBy: sum
+		sourceColumn: voix
+
+		annotation SummarizationSetBy = Automatic
+
+	partition resultats_liste = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("aws-1-eu-west-3.pooler.supabase.com", "postgres"),
+				    public_fact_resultats_liste = Source{[Schema="public",Item="fact_resultats_liste"]}[Data],
+				    #"Colonnes supprimées" = Table.RemoveColumns(public_fact_resultats_liste,{"resultat_liste_id"}),
+				    #"Type modifié" = Table.TransformColumnTypes(#"Colonnes supprimées",{{"election_sk", Int64.Type}, {"geo_sk", Int64.Type}, {"candidat_sk", Int64.Type}})
+				in
+				    #"Type modifié"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

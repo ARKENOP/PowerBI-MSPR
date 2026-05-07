@@ -1,4 +1,4 @@
-table 'public fact_insee_composition'
+table insee_composition
 	lineageTag: cde10b69-b99c-4d4b-a287-b4a0ec2cbf17
 
 	column annee
@@ -1712,7 +1712,7 @@ table 'public fact_insee_composition'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'public fact_insee_composition' = m
+	partition insee_composition = m
 		mode: import
 		source =
 				let

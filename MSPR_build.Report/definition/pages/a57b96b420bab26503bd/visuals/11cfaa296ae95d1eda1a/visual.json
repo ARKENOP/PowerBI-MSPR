@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "11cfaa296ae95d1eda1a",
+  "position": {
+    "x": 1003.9178573408993,
+    "y": 434.57681004047981,
+    "z": 1001,
+    "height": 284.67052365020976,
+    "width": 275.58529417201157,
+    "tabOrder": 1001
+  },
+  "visual": {
+    "visualType": "listSlicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "nuances_partis"
+                    }
+                  },
+                  "Property": "Bloc Ministère"
+                }
+              },
+              "queryRef": "nuances_partis.Bloc Ministère",
+              "nativeQueryRef": "Bloc Politique",
+              "active": true,
+              "displayName": "Bloc Politique"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "general": [
+        {
+          "properties": {}
+        }
+      ],
+      "selection": [
+        {
+          "properties": {
+            "selectAllCheckboxEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "data": [
+        {
+          "properties": {
+            "isInvertedSelectionMode": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

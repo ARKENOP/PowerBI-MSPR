@@ -1,4 +1,4 @@
-table 'public fact_insee_historical_demography'
+table insee_historical_demography
 	lineageTag: 5269b5ce-0b29-48e6-afba-b8ef65ff089b
 
 	column annee
@@ -82,7 +82,7 @@ table 'public fact_insee_historical_demography'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'public fact_insee_historical_demography' = m
+	partition insee_historical_demography = m
 		mode: import
 		source =
 				let

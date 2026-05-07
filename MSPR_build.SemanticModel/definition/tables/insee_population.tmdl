@@ -1,4 +1,4 @@
-table 'public fact_insee_population'
+table insee_population
 	lineageTag: 878df5f9-a209-408b-a6df-80b98cb5d0fc
 
 	column annee
@@ -4372,7 +4372,7 @@ table 'public fact_insee_population'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'public fact_insee_population' = m
+	partition insee_population = m
 		mode: import
 		source =
 				let

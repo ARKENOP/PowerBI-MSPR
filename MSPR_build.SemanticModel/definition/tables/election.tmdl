@@ -1,4 +1,4 @@
-table 'public dim_election'
+table election
 	lineageTag: b376700d-319b-4a74-bac6-8eabed6c5604
 
 	column election_sk
@@ -31,7 +31,7 @@ table 'public dim_election'
 
 		annotation SummarizationSetBy = User
 
-	partition 'public dim_election' = m
+	partition election = m
 		mode: import
 		source =
 				let

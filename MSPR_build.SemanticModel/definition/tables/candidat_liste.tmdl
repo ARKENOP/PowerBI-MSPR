@@ -1,4 +1,4 @@
-table 'public dim_candidat_liste'
+table candidat_liste
 	lineageTag: 24485ee5-3c94-4b45-acfb-65d73fc48517
 
 	column candidat_sk
@@ -45,7 +45,7 @@ table 'public dim_candidat_liste'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'public dim_candidat_liste' = m
+	partition candidat_liste = m
 		mode: import
 		source =
 				let
