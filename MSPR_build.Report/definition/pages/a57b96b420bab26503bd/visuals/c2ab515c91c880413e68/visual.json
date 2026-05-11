@@ -309,7 +309,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "88.34614711439171D"
+                  "Value": "74.20245272243085D"
                 }
               }
             }
@@ -337,7 +337,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "86.26419490555384D"
+                  "Value": "64.2436236709002D"
                 }
               }
             }
@@ -353,7 +353,7 @@
             "totals": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             }

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "b6f8ebc878a6514519f5",
+  "position": {
+    "x": 1003.3918151179586,
+    "y": 39.441502166586424,
+    "z": 6,
+    "height": 302.91073663938374,
+    "width": 187.74155031295138,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "geographie"
+                    }
+                  },
+                  "Property": "libelle_commune"
+                }
+              },
+              "queryRef": "geographie.libelle_commune",
+              "nativeQueryRef": "libelle_commune"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
